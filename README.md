@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
@@ -95,3 +96,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+=======
+# design-week-tallahassee-twenty-twenty
+Design Week Tallahassee landing and information page. 
+>>>>>>> eedb8354edc4dc6b4ce10dfc5b87ed265e2e2819

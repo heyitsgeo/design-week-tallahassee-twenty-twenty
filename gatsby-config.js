@@ -1,10 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Design Week Tallahassee`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        custom: {
+          families: ['jaf-herb:n4,n7', 'jaf-herb-condensed:n4,n7', 'rift:n4,i4,n5,i5,n6,i6,n7,i7'],
+          urls: ['https://use.typekit.net/cpg7nab.css']
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

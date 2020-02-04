@@ -1,0 +1,13 @@
+.Header {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .logo {
+    width: 8em;
+  }
+}

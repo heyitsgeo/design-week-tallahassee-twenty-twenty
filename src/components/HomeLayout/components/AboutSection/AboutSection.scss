@@ -1,0 +1,60 @@
+@import "src/styles/variables";
+
+.AboutSection-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12vw 0 40vw;
+
+  h1 {
+    color: $cream;
+  }
+
+  .AboutSection-illustration {
+    position: absolute;
+    right: 0;
+    top: calc(22vw * -1);
+    width: 10vw;
+    min-width: 6em;
+
+    @media only screen  and (min-width : 1200px) {
+      top: -12em;
+    }
+  }
+
+  .AboutSection-tagline-image {
+    width: 50vw;
+    margin-bottom: 3vw;
+  }
+
+  .AboutSection-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+
+    .divider {
+      display: block;
+      height: 2px;
+      background-color: $black;
+      width: 100%;
+      align-self: center;
+      margin: 0 2em;
+    }
+
+    .AboutSection-copy {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -2em;
+      padding-top: 2vw;
+
+      p {
+        box-sizing: border-box;
+        flex: 1;
+        max-width: 600px;
+        min-width: 350px;
+        margin: 2em;
+        color: $black;
+      }
+    }
+  }
+}

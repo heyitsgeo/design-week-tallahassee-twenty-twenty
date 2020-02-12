@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+
+.Header {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 999;s
+
+  .logo {
+    width: 6em;
+  }
+
+  .header-name {
+    justify-self: center;
+    color: $blue;
+
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+}

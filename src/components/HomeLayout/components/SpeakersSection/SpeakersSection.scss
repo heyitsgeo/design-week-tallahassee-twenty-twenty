@@ -1,0 +1,40 @@
+.SpeakersSection-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vw 0 40vw;
+
+  .SpeakersSection-blurb {
+    max-width: 650px;
+    text-align: center;
+  }
+
+  .SpeakersSection-illustration-skull {
+    width: 10vw;
+    min-width: 6em;
+
+    @media only screen  and (min-width : 1200px) {
+      top: -16em;
+    }
+  }
+
+  .SpeakersSection-illustration-pencil {
+    position: absolute;
+    right: 0;
+    top: calc(20vw * -1);
+    width: 16vw;
+    min-width: 6em;
+
+    @media only screen  and (min-width : 1200px) {
+      top: -14em;
+    }
+  }
+
+  .SpeakersSection-speakers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1em;
+    justify-content: center;
+    padding-top: 4vw;
+  }
+}

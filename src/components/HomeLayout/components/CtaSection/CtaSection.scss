@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+
+.CtaSection-content {
+  display: flex;
+  flex-direction: column;
+  color: $cream;
+  justify-content: flex-start;
+  padding: 0 0 55vw;
+
+  @media only screen  and (min-width : 1200px) {
+    padding-bottom: 30em;
+  }
+}
+
+.CtaSection-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -1em;
+
+  .CtaSection-brief {
+    margin: 1em;
+    flex: 3;
+    min-width: 60%;
+  }
+
+  .btn {
+    flex: 1;
+    margin: 1em;
+  }
+}
+
+.CtaSection-illustration {
+  position: absolute;
+  right: 0;
+  bottom: -3em;
+  width: 200px;
+}

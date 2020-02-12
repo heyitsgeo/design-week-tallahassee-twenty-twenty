@@ -1,0 +1,108 @@
+@import '../../../../styles/variables';
+
+.Navigation {
+  justify-self: flex-end;
+
+  .Navigation-toggle {
+    display: block;
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    .line {
+      background-color: $blue;
+      display: block;
+      height: 4px;
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  .Navigation-overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $cream;
+
+    .Navigation-overlay-links {
+      list-style: none;
+      margin: 0;
+      text-align: center;
+
+      .link {
+        font-size: 6vw;
+
+        a {
+          color: $blue;
+          text-decoration: none;
+          $expandingAnimation: all .5s cubic-bezier(1,.25,0,.75) 0s;
+          position: relative;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: $blue;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: $expandingAnimation;
+            transition: $expandingAnimation;
+          }
+          &:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+
+    .Navigation-close-btn {
+      display: block;
+      width: 2em;
+      height: 2em;
+      margin: 1em;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 26px;
+      right: 38px;
+
+      .line {
+        background-color: $blue;
+        display: block;
+        height: 4px;
+        width: 100%;
+        transform: rotate(45deg);
+        position: absolute;
+
+        &:first-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &.active {
+    .Navigation-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

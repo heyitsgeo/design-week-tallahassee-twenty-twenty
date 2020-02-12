@@ -1,0 +1,17 @@
+.HeroSection {
+  min-height: 200vh;
+}
+
+.image-container {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container-alt {
+  position: absolute;
+  left: 0;
+  right: 0;
+}

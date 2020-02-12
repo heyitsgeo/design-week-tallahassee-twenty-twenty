@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "name": "Copeland Productions",
+    "website": "http://copelandproductions.com/",
+    "logo_resource": "copeland-logo.png"
+  },
+  {
+    "id": 1,
+    "name": "Fresh Impressions Letterpress Studio",
+    "website": "https://filetterpress.com/",
+    "logo_resource": "frshimp-logo.png"
+  },
+  {
+    "id": 2,
+    "name": "Pen & Tool",
+    "website": "https://penandtooldesigns.com/",
+    "logo_resource": "pen-logo.png"
+  },
+  {
+    "id": 3,
+    "name": "Rosenfeld",
+    "website": "https://rosenfeldmedia.com/",
+    "logo_resource": "rosenfeld-logo.png"
+  },
+  {
+    "id": 4,
+    "name": "Stickermule",
+    "website": "https://www.stickermule.com/",
+    "logo_resource": "stickermule-logo.png"
+  },
+  {
+    "id": 5,
+    "name": "Tallahassee Downtown",
+    "website": "https://tallahasseedowntown.com/",
+    "logo_resource": "tallahassee-downtown-logo.png"
+  },
+  {
+    "id": 6,
+    "name": "UnderStory",
+    "website": "https://understorystudio.com/",
+    "logo_resource": "under-story-logo.png"
+  }
+]

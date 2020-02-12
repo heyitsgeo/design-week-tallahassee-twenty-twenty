@@ -1,0 +1,25 @@
+.SponsorsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2vw 0 20vw;
+
+  .SponsorsSection-thankyou {
+    margin-bottom: 1em;
+  }
+
+  .SponsorsSection-sponsors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .link {
+      padding: 2em 1em;
+    }
+    .Sponsor-image {
+      width: 200px;
+    }
+  }
+}

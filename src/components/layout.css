@@ -5,8 +5,36 @@ h1 {
 body {
   font-weight: normal;
   word-wrap: break-word;
-  letter-spacing: 0.1em;
 }
+* {
+  box-sizing: border-box;
+}
+
+/** {*/
+/*  background: #000 !important;*/
+/*  color: #0f0 !important;*/
+/*  outline: solid #f00 1px !important;*/
+/*}*/
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media only screen  and (min-width : 1200px) {
+  h1 {
+    font-size: 13em;
+  }
+  h2 {
+    font-size: 8em;
+  }
+  h4 {
+    font-size: 2.8em;
+  }
+  h6 {
+    font-size: 2em;
+  }
+}
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -17,7 +45,6 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  text-rendering: optimizeLegibility;
 }
 h2 {
   margin-left: 0;
@@ -29,7 +56,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  text-rendering: optimizeLegibility;
+
 }
 h3 {
   margin-left: 0;
@@ -39,9 +66,8 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
   color: inherit;
-  text-rendering: optimizeLegibility;
   font-size: 1.5em;
 }
 h4 {
@@ -54,7 +80,6 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
 h5 {
@@ -65,10 +90,8 @@ h5 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.1em;
   color: inherit;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
 }
 h6 {
   margin-left: 0;
@@ -80,7 +103,12 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  text-rendering: optimizeLegibility;
+
+
+}
+
+p {
+  margin-bottom: 0.1em;
 }
 
 .hero-section {
@@ -95,6 +123,10 @@ h6 {
   top: 100vh;
   min-height: 100vh;
   background-color: #231F20;
+}
+
+.black-text {
+  color: #231F20;
 }
 
 /*h3 {*/
@@ -181,6 +213,10 @@ h6 {
   text-decoration-style: wavy;
 }
 
+.underline.black {
+  text-decoration-color: #231F20;
+}
+
 .underline.orange {
   text-decoration-color: #FBA81A;
 }
@@ -193,10 +229,9 @@ h6 {
   background-image: linear-gradient(to right, #FBA81A 0%, #F38EBA 100%);
   border-radius: 40px;
   box-sizing: border-box;
-  height: 40px;
+  height: 52px;
   color: #F3E3DB;
   display: block;
-  margin: 0 auto;
   padding: 2px;
   position: relative;
   text-decoration: none;
@@ -230,6 +265,9 @@ h6 {
 .cta {
   display: flex;
   justify-content: center;
+  min-height: auto;
+  padding-bottom: 15em;
+  align-items: flex-start;
 }
 
 .cta .content{
@@ -241,7 +279,6 @@ h6 {
   flex-direction: column;
   width: 60%;
   min-width: 655px;
-  margin-right: auto;
 }
 
 .snag-tickets .row {
@@ -257,17 +294,111 @@ h6 {
   flex-direction: column;
   justify-content: center;
   background-color: #6BC4D5;
+  padding-bottom: 15em;
+  padding-top: 15em;
+  align-items: flex-start;
 }
 
 .section.about .content {
   flex: 0 1 auto;
   width: 60%;
   min-width: 655px;
-  margin-right: auto;
 }
 
 .section.about .creature-of-habit {
   width: 420px;
+}
+
+.section.speakers {
+  display: flex;
+  flex-direction: column;
+  background-color: #F3E3DB;
+  padding-top: 15em;
+}
+
+.section.speakers h2 {
+  text-align: center;
+}
+
+.section.speakers h5 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  margin-bottom: 15em;
+}
+
+.section.speakers .speaker {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15em;
+}
+
+.section.speakers .speaker .about {
+  flex: 1;
+}
+
+.section.speakers .speaker:nth-child(odd) .image {
+  margin-left: 5em;
+}
+
+.section.speakers .speaker:nth-child(even) .image {
+  margin-right: 5em;
+}
+
+.section.speakers .speaker .image {
+  flex: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.section.speakers .speaker .name {
+   text-align: left;
+   font-family: "rift", serif;
+   font-weight: 700;
+}
+
+.section.speakers .speaker.blue .name {
+  color: #3976B8;
+}
+
+.section.speakers .speaker.pink .name {
+  color: #F38EBA;
+}
+
+.section.speakers .speaker.orange .name {
+  color: #FBA81A;
+}
+
+.section.speakers .speaker .contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section.speakers .speaker .contact h3 {
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+.section.speakers .speaker .contact .divider {
+  width: 0.2em;
+  background: #231F20;
+}
+
+.section.speakers .speaker.blue .contact .divider {
+  width: 0.2em;
+  background: #3976B8;
+}
+
+.section.speakers .speaker.pink .contact .divider {
+  width: 0.2em;
+  background: #F38EBA;
+}
+
+.section.speakers .speaker.orange .contact .divider {
+  width: 0.2em;
+  background: #FBA81A;
 }
 
 main {

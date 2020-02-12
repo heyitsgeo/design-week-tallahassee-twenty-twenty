@@ -1,0 +1,88 @@
+@import 'src/styles/variables';
+
+.Section {
+  display: flex;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+
+  &.fill-viewport {
+    min-height: 100vh;
+  }
+
+  &.hide-overflow {
+    overflow: hidden;
+  }
+
+  &.fixed {
+    position: fixed;
+    width: 100%;
+  }
+
+  &.black {
+    background-color: $black;
+
+    .Section-transition {
+      path {
+        fill: $black;
+      }
+    }
+  }
+
+  &.cream {
+    background-color: $cream;
+
+    .Section-transition {
+      path {
+        fill: $cream;
+      }
+    }
+  }
+
+  &.blue {
+    background-color: $blue;
+
+    .Section-transition {
+      path {
+        fill: $blue;
+      }
+    }
+  }
+
+  &.aqua {
+    background-color: $aqua;
+
+    .Section-transition {
+      path {
+        fill: $aqua;
+      }
+    }
+  }
+
+  .Section-transition {
+    width: 100%;
+    height: calc(100vw / (0.05 * 100));
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @media only screen  and (min-width : 1200px) {
+      height: 320px;
+    }
+
+    &.bottom {
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+
+    &.top {
+      top: calc((100vw / (0.05 * 100) * -1) + 1px);
+
+      @media only screen  and (min-width : 1200px) {
+        top: -320px;
+      }
+    }
+  }
+}

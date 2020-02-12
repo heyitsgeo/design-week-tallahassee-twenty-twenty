@@ -1,0 +1,21 @@
+.WorkshopsPageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8em;
+
+  .WorkshopsPageContent-page-title {
+  }
+
+  .WorkshopsPageContent-about {
+    text-align: center;
+    width: 40vw;
+    max-width: 650px;
+    min-width: 350px;
+    margin-bottom:  8em;
+
+    @media only screen and (max-width : 600px) {
+      width: 100%;
+    }
+  }
+}

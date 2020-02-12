@@ -1,0 +1,14 @@
+@import "variables";
+
+.NotFoundPage {
+  background-color: $cream;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+
+  a {
+    color: $black;
+  }
+}

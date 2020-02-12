@@ -1,0 +1,104 @@
+@import "src/styles/variables";
+
+.DayAgenda {
+  padding: 5vw 0 ;
+  .DayAgenda-day-of-week {
+    color: $cream;
+    font-weight: 300;
+  }
+
+  &.orange {
+    .DayAgenda-date {
+      color: $orange;
+    }
+
+    .DayAgenda-agenda {
+
+      .title {
+        color: $orange;
+      }
+    }
+  }
+
+  &.blue {
+    .DayAgenda-date {
+      color: $blue;
+    }
+
+    .DayAgenda-agenda {
+
+      .title {
+        color: $blue;
+      }
+    }
+  }
+
+  &.pink {
+    .DayAgenda-date {
+      color: $pink;
+    }
+
+    .DayAgenda-agenda {
+
+      .title {
+        color: $pink;
+      }
+    }
+  }
+
+  &.darkPink {
+    .DayAgenda-date {
+      color: $dark-pink;
+    }
+    .DayAgenda-agenda {
+
+      .title {
+        color: $dark-pink;
+      }
+    }
+  }
+
+  &.aqua {
+    .DayAgenda-date {
+      color: $aqua;
+    }
+
+    .DayAgenda-agenda {
+
+      .title {
+        color: $aqua;
+      }
+    }
+  }
+
+  .DayAgenda-agenda {
+    list-style: none;
+    margin: 0;
+  }
+
+  .AgendaItem-time {
+    color: $cream;
+    margin-bottom: 0.5em;
+  }
+}
+
+.AgendaItem {
+  padding: 4vw 0;
+  max-width: 500px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+  .AgendaItem-time {
+    font-size: 2.2em;
+  }
+
+  .title, .description {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 0.25em;
+  }
+  .description {
+    color: $cream;
+  }
+}

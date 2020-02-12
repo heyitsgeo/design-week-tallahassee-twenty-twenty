@@ -1,0 +1,63 @@
+@import "src/styles/variables";
+
+.ScheduleNavigator {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 8vw;
+
+  .ScheduleNavigator-jump-to-day {
+    color: $cream;
+    margin-bottom: 0.25em;
+  }
+
+  .ScheduleNavigator-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    border: 1px solid $cream;
+
+    .day-link {
+      padding: 1em;
+      margin-bottom: 0;
+
+      a {
+        text-decoration: none;
+        font-size: 8vw;
+        font-weight: 700;
+        line-height: 1em;
+      }
+
+      &.wednesday {
+        a {
+          color: $orange;
+        }
+      }
+
+      &.thursday {
+        a {
+          color: $pink;
+        }
+      }
+
+      &.friday {
+        a {
+          color: $aqua;
+        }
+      }
+
+      &.saturday {
+        a {
+          color: $dark-pink;
+        }
+      }
+
+      &.sunday {
+        a {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

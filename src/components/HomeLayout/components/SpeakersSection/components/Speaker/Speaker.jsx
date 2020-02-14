@@ -47,6 +47,7 @@ const Speaker = ({data, ...rest}) => {
       if (social[key] && social[key].trim().length > 0) {
         return <a className="Speaker-social-icon" key={key} href={socialMetaMap[key].baseUrl + social[key]}>{socialMetaMap[key].icon}</a>
       }
+      return null;
     })
   };
 
@@ -54,8 +55,6 @@ const Speaker = ({data, ...rest}) => {
     const {
       images
     } = data;
-
-    console.table(imgResource);
 
     const foundEdge = images.edges
       .filter(edge => edge.node.childImageSharp && edge.node.childImageSharp.fluid)

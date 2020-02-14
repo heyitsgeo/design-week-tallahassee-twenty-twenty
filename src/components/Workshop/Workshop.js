@@ -3,12 +3,18 @@ import propTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 import './Workshop.scss';
+import LinkButton from '../LinkButton';
+import { graphql, StaticQuery } from 'gatsby';
 
 function Workshop(props) {
   const {
     workshop,
-    direction
+    direction,
+    data
   } = props;
+
+  const canPurchaseTickets = workshop.frontmatter.eventbrite && workshop.frontmatter.eventbrite.trim().length > 0;
+  const isFree = !workshop.frontmatter.rsvp;
 
   return (
     <div className='overflow-hidden'>
@@ -16,9 +22,14 @@ function Workshop(props) {
         <div className="Workshop-about">
           <h2 className="Workshop-title">{workshop.frontmatter.title}</h2>
           <div className="Workshop-description" dangerouslySetInnerHTML={{ __html: workshop.html }} />
-          <button className='btn' type='button'>
-            <span>Get Tickets</span>
-          </button>
+          <div className={`button-container${!canPurchaseTickets ? ' disabled' : ''}`}>
+            {!isFree && <LinkButton href={workshop.frontmatter.eventbrite} styleClass="secondary" disabled={!(canPurchaseTickets)}>
+              {canPurchaseTickets ? 'Get Tickets' : 'Check Back Soon'}
+            </LinkButton>}
+            {isFree && <div className="free-illustration">
+              <Img fluid={data.freeImage.childImageSharp.fluid} />
+            </div>}
+          </div>
         </div>
         <div className="Workshop-image">
           <Img fluid={workshop.frontmatter.featureImage.childImageSharp.fluid} />
@@ -27,6 +38,23 @@ function Workshop(props) {
     </div>
   );
 }
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        freeImage: file(relativePath: { eq: "free.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 298) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Workshop data={data} {...props} />}
+    />
+)
 
 Workshop.propTypes = {
   workshop: propTypes.shape({
@@ -49,5 +77,3 @@ Workshop.propTypes = {
 Workshop.defaultProps = {
   direction: 'right'
 };
-
-export default Workshop;

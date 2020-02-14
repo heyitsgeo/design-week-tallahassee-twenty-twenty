@@ -31,6 +31,16 @@
     }
   }
 
+  &.alt-black {
+    background-color: $alt-black;
+
+    .Section-transition {
+      path {
+        fill: $alt-black;
+      }
+    }
+  }
+
   &.cream {
     background-color: $cream;
 

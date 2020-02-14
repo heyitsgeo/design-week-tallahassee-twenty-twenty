@@ -115,7 +115,7 @@
       "twitter": "",
       "dribble": ""
     },
-    "img-resource": "naom- trad.png"
+    "img-resource": "naom-trad.png"
   },
   {
     "name": "Carly Berry",
@@ -129,6 +129,34 @@
       "dribble": ""
     },
     "img-resource": "carls.png"
+  },
+  {
+    "sort": 0,
+    "name": "Hellcats",
+    "title": "Co-Founders at Hellcats",
+    "social": {
+      "website": "https://hellcatsusa.com/",
+      "instagram": "@Hellcats.Usa",
+      "facebook": "",
+      "linkedin": "",
+      "twitter": "@HellcatsUsa",
+      "dribble": ""
+    },
+    "img-resource": "hellcats.png"
+  },
+  {
+    "sort": 1,
+    "name": "Bob Ewing",
+    "title": "Co-Founders at inch_x_inch",
+    "social": {
+      "website": "http://bob-ewing.com/",
+      "instagram": "@bobewing_",
+      "facebook": "",
+      "linkedin": "",
+      "twitter": "@bobewing_",
+      "dribble": "dribbble.com/bobewing"
+    },
+    "img-resource": "bob-ewing.png"
   }
 ]
 

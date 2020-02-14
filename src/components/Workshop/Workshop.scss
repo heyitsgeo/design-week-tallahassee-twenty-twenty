@@ -8,27 +8,16 @@
   margin-top: 5vw;
   margin-bottom: 5vw;
 
-  .btn {
-    width: 280px;
-    justify-self: flex-end;
-    margin-top: 2em;
+  .button-container {
+    width: 180px;
 
-    span {
-      background-color: $cream;
-      color: $black;
-
-      &:hover {
-        background-color: transparent;
-      }
+    .disabled {
+      width: 240px;
     }
   }
 
   &.left {
     flex-direction: row-reverse;
-
-    .btn {
-      justify-self: flex-start;
-    }
   }
 
   .Workshop-about {
@@ -50,6 +39,11 @@
 
       font-size: 6vw;
       letter-spacing: 2px;
+    }
+
+    .free-illustration {
+      margin-top: 1vw;
+      width: 60px;
     }
   }
 

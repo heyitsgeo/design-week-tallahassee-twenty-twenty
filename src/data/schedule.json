@@ -23,7 +23,7 @@
       },
       {
         "key": 1,
-        "title": "Wellness for Designers",
+        "title": "Cultural Expression in Your Workspace",
         "description": "Talk with Marketing for Change",
         "start": "9:30 AM",
         "end": "10:45 AM"
@@ -65,14 +65,15 @@
       {
         "key": 0,
         "title": "TBA",
-        "start": "9:30 AM",
+        "start": "10:00 AM",
         "end": "11:00 AM"
       },
       {
         "key": 1,
-        "title": "Lunch",
-        "start": "12:00 PM",
-        "end": "1:00 PM"
+        "title": "TBD",
+        "description": "Talk with Bob Ewing",
+        "start": "11:15 AM",
+        "end": "12:00 PM"
       },
       {
         "key": 2,
@@ -83,25 +84,20 @@
       },
       {
         "key": 3,
-        "title": "TBA",
-        "start": "3:30 PM",
-        "end": "5:30 PM"
-      },
-      {
-        "key": 4,
         "title": "Notebooks, Bills, & Old Love Letters: Handmade Paper from Recycled Scrap",
         "description": "Workshop with Jenn Egelfeld",
         "start": "3:30 PM",
         "end": "5:30 PM"
       },
       {
-        "key": 5,
-        "title": "TBA",
+        "key": 4,
+        "title": "Let's Get Dark Together",
+        "description": "Keynote with Hellcats",
         "start": "6:00 PM",
         "end": "8:00 PM"
       },
       {
-        "key": 6,
+        "key": 5,
         "title": "Designer Drinks",
         "start": "9:00 PM",
         "end": "11:00 PM"
@@ -121,7 +117,7 @@
       },
       {
         "key": 1,
-        "title": "TBA",
+        "title": "Vendor Village",
         "start": "7:30 AM",
         "end": "11:30 AM"
       },
@@ -146,7 +142,8 @@
       },
       {
         "key": 5,
-        "title": "TBA",
+        "title": "Closing Party",
+        "description": "TBA",
         "start": "9:00 PM",
         "end": "11:00 PM"
       }

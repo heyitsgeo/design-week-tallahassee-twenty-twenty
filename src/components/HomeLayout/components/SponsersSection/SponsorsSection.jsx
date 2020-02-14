@@ -5,40 +5,86 @@ import Img from 'gatsby-image';
 import './SponsorsSection.scss';
 import { graphql, StaticQuery } from 'gatsby';
 
+const DEFAULT_IMAGE_WIDTH = 200;
+
 const SponsorsSection = ({data}) => {
   const {
     sponsors,
     sponsorsImages
   } = data;
 
-  function getImageByName(imgResource) {
+  function getImageByName(imgResource, scale) {
     const foundImage = sponsorsImages.edges
       .filter(edge => edge.node.childImageSharp && edge.node.childImageSharp.fluid)
-      .filter(safeEdge => safeEdge.node.childImageSharp.fluid.originalName === imgResource);
+      .find(safeEdge => safeEdge.node.childImageSharp.fluid.originalName === imgResource);
 
-    if (foundImage.length > 0) {
+    if (foundImage) {
+      const scaledWidth = scale ? DEFAULT_IMAGE_WIDTH * scale : null;
 
-      console.log(foundImage);
+      let style = {};
 
-      const imageProps = foundImage[0].node.childImageSharp.fluid;
+      if (scaledWidth) {
+        style = {
+          width: scaledWidth
+        }
+      }
+
+      const imageProps = foundImage.node.childImageSharp.fluid;
       return (
-        <div className="Sponsor-image">
+        <div className="Sponsor-image" style={style}>
           <Img fluid={imageProps}/>
         </div>
       )
     }
   }
 
+  function sponsorsForLevel(level) {
+    return sponsors.edges
+      .filter(edge => edge.node.level === level)
+      .map(edge => edge.node);
+  }
+
+  function getImageLink(imageProps) {
+    return (
+      <a className="link" key={imageProps.id} href={imageProps.website}>
+        {getImageByName(imageProps.logo_resource, imageProps.scale)}
+      </a>
+    );
+  }
+
   return (
-    <Section color="cream" fillScreen={false} transitionTop={true}>
+    <Section color="cream" fillScreen={false}>
       <div className="SponsorsSection">
         <h6 className="SponsorsSection-thankyou">Thank You to our Sponsors</h6>
         <div className="SponsorsSection-sponsors">
-          {sponsors.edges.map(edge =>
-            <a className="link" key={edge.node.id} href={edge.node.website}>
-              {getImageByName(edge.node.logo_resource)}
-            </a>
-          )}
+          <div className="level">
+            <div className="divider" />
+            <h6 className="level-title">Godzilla</h6>
+            <div className="sponsors">
+              {sponsorsForLevel(1).map(node => getImageLink(node))}
+            </div>
+          </div>
+          <div className="level">
+            <div className="divider" />
+            <h6 className="level-title">Demogorgon</h6>
+            <div className="sponsors">
+              {sponsorsForLevel(2).map(node => getImageLink(node))}
+            </div>
+          </div>
+          <div className="level">
+            <div className="divider" />
+            <h6 className="level-title">The Swamp Creature</h6>
+            <div className="sponsors">
+              {sponsorsForLevel(3).map(node => getImageLink(node))}
+            </div>
+          </div>
+          <div className="level">
+            <div className="divider" />
+            <h6 className="level-title">Mad Scientist</h6>
+            <div className="sponsors">
+              {sponsorsForLevel(4).map(node => getImageLink(node))}
+            </div>
+          </div>
         </div>
       </div>
     </Section>
@@ -56,6 +102,8 @@ export default props => (
               name
               website
               logo_resource
+              level
+              scale
             }
           }
         }

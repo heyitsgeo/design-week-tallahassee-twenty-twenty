@@ -27,17 +27,22 @@ class HeroSection extends React.Component {
     if (this.imageContainer) {
       const position = -this.imageContainer.getBoundingClientRect().top - ((this.imageContainer.clientHeight) - window.pageYOffset);
       const clampPos = this.section.clientHeight / 2 - this.imageContainerAlt.clientHeight / 2;
+      const lockHeroContainer = window.pageYOffset - window.innerHeight > 0;
 
       if (position < clampPos) {
         this.imageContainerAlt.style.top = position + 'px';
       }
 
-      window.requestAnimationFrame(this.positionOnHero);
+      if (lockHeroContainer) {
+        this.imageContainer.style.position = 'relative';
+      } else {
+        this.imageContainer.style.position = 'fixed';
+      }
     }
   };
 
   componentDidMount() {
-    window.requestAnimationFrame(this.positionOnHero);
+    window.addEventListener('scroll', this.positionOnHero);
     this.resizeFixedImage();
     window.addEventListener('resize', this.resizeFixedImage);
     this.imageContainerAlt.style.top = this.imageContainer.top;
@@ -70,11 +75,13 @@ class HeroSection extends React.Component {
         <Section color="cream" ref={this.setSection} fixed={true} position={{top: '0'}}>
           <div ref={this.setImageContainer} className="image-container">
             <Img fluid={data.heroImage.childImageSharp.fluid}/>
+            <h6 className="dates">March 25 - March 29 2020</h6>
           </div>
         </Section>
         <Section color="black" hideOverflow={true} position={{top: '100vh'}}>
           <div ref={this.setImageContainerAlt} className="image-container-alt">
             <Img fluid={data.heroImageAlt.childImageSharp.fluid}/>
+            <h6 className="dates">March 25 - March 29 2020</h6>
           </div>
         </Section>
       </div>

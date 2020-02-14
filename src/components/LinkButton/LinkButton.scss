@@ -1,0 +1,80 @@
+@import "src/styles/variables";
+
+.LinkButton {
+  font-family: 'jaf-herb', serif;
+  letter-spacing: 4px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  height: 52px;
+  display: block;
+  padding: 2px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  min-width: 180px;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: default;
+  }
+
+  &.sunset {
+    background-image: linear-gradient(to right, $orange 0%, $pink 100%);
+
+    &.primary {
+
+      &:hover {
+        color: $cream;
+      }
+
+      span {
+        color: $cream;
+        background: $black;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+
+    &.secondary {
+
+      &:hover {
+        color: $black
+      }
+
+      span {
+        color: $black;
+        background: $cream;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+
+      &.disabled {
+        background-image: none;
+        span {
+          color: lighten($black, 20%);
+          background: darken($cream, 10%);
+          &:hover {
+            background: darken($cream, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  span {
+    align-items: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background .5s ease;
+    width: 100%;
+  }
+}

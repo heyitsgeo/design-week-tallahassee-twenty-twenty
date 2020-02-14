@@ -8,6 +8,7 @@ import '../styles/404.scss';
 
 const NotFoundPage = () => (
   <Layout>
+    <SEO title="Not Found" description={"Design Week Tallahassee"}/>
     <div className="NotFoundPage">
       <SEO title="404: Not found" />
       <h1>NOT FOUND</h1>

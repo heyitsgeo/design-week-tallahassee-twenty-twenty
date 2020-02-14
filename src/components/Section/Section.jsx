@@ -66,7 +66,7 @@ Section.propTypes = {
     propTypes.arrayOf(propTypes.node),
     propTypes.node,
   ]).isRequired,
-  color: propTypes.oneOf(['cream', 'black', 'pink', 'blue', 'orange', 'aqua']).isRequired,
+  color: propTypes.oneOf(['cream', 'black', 'pink', 'blue', 'orange', 'aqua', 'alt-black']).isRequired,
   fillScreen: propTypes.bool.isRequired,
   hideOverflow: bool.isRequired,
   fixed: bool.isRequired,

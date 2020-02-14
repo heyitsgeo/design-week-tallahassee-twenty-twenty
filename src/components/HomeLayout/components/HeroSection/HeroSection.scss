@@ -1,5 +1,11 @@
+@import "src/styles/variables";
+
 .HeroSection {
   min-height: 200vh;
+
+  .dates {
+    text-align: center;
+  }
 }
 
 .image-container {
@@ -8,10 +14,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  .dates {
+    color: $blue;
+  }
 }
 
 .image-container-alt {
   position: absolute;
   left: 0;
   right: 0;
+
+  .dates {
+    color: $cream;
+  }
 }

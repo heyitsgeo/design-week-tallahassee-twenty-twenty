@@ -3,21 +3,30 @@ import Layout from '../components/layout';
 import { Section } from '../components/Section';
 import { graphql } from 'gatsby';
 import Workshop from '../components/Workshop';
+import { DateTime } from 'luxon';
 
-import '../styles/workshops.scss';
+import '../styles/events.scss';
+import SEO from '../components/seo';
 
-export function Workshops({data}) {
+export function Events({data}) {
   const {
     workshops
   } = data;
 
+  function orderWorkshops(workshopEdges) {
+    return workshopEdges.sort((o1, o2) => {
+      return DateTime.fromISO(o1.node.frontmatter.date).ts - DateTime.fromISO(o2.node.frontmatter.date).ts;
+    });
+  }
+
   return (
     <Layout>
+      <SEO title="Events" description={"Design Week Tallahassee"}/>
       <Section color="cream">
-        <div className="WorkshopsPageContent">
-          <h2 className="WorkshopsPageContent-page-title">Workshops</h2>
-          <p className="WorkshopsPageContent-about">This is a spot for a lil' blurb or something if there's a lil' blurb we want to add about this section woohoo</p>
-          {workshops.edges.map((edge, index) =>
+        <div className="EventsPageContent">
+          <h2 className="EventsPageContent-page-title">Events</h2>
+          {/*<p className="EventsPageContent-about">This is a spot for a lil' blurb or something if there's a lil' blurb we want to add about this section woohoo</p>*/}
+          {orderWorkshops(workshops.edges).map((edge, index) =>
             <Workshop key={edge.node.id} workshop={edge.node} direction={index % 2 === 0 ? 'right': 'left'}/>
             )}
         </div>
@@ -26,7 +35,7 @@ export function Workshops({data}) {
   )
 }
 
-export default Workshops;
+export default Events;
 
 export const query = graphql`
   query {
@@ -37,6 +46,9 @@ export const query = graphql`
           html
           frontmatter {
             title
+            date
+            eventbrite
+            rsvp
             featureImage {
               childImageSharp {
                 fluid(maxWidth: 800) {

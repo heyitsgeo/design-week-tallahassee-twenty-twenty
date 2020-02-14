@@ -1,15 +1,19 @@
 import React from 'react';
 import { Section } from '../../../Section';
+import fortuneTeller from '../../../../images/see-you-there.gif';
 
 import './SeeYouThereSection.scss';
 
 const SeeYouThereSection = () => {
   return (
-    <Section color="black" transitionTop={true} fillScreen={false}>
+    <Section color="alt-black" transitionTop={true} fillScreen={false}>
       <div className="SeeYouThereSection">
-        <button className='btn' type='button'>
+          <div className="illustration-container">
+            <img src={fortuneTeller} alt="fortune teller ball"/>
+          </div>
+        <a className='btn' href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789" target="_blank">
           <span>Get Tickets</span>
-        </button>
+        </a>
       </div>
     </Section>
   );

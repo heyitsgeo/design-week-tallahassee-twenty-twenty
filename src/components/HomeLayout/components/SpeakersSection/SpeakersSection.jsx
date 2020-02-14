@@ -13,6 +13,21 @@ const SpeakersSection = ({ data }) => {
     pencilIllustration
   } = data;
 
+  function sortedSpeakers() {
+    return speakers.edges.sort((a,b) => {
+      if (a.node.sort == null) {
+        return 1;
+      }
+
+      if (b.node.sort == null) {
+        return -1
+      }
+
+      return a.node.sort - b.node.sort
+    })
+      .map(edge => edge.node);
+  }
+
   return (
     <Section color="cream" transitionTop={true}>
       <div id="speakers" className="SpeakersSection-content">
@@ -28,8 +43,8 @@ const SpeakersSection = ({ data }) => {
           they’ve learned along the way to share with us in this incredibly impactful week.</p>
         <div className="overflow-hidden">
           <div className="SpeakersSection-speakers">
-            {speakers.edges.map(edge => {
-              return <Speaker key={edge.node.name} speaker={edge.node} />
+            {sortedSpeakers().map(node => {
+              return <Speaker key={node.name} speaker={node} />
             })}
           </div>
         </div>
@@ -46,6 +61,7 @@ export default props => (
           edges {
             node {
               name
+              sort
               img_resource
               title
               social {

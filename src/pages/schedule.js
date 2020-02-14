@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import '../styles/schedule.scss';
 import { graphql } from 'gatsby';
 import DayAgenda from '../components/DayAgenda';
+import SEO from '../components/seo';
 
 const colorMap = {
   'wednesday': 'orange',
@@ -22,6 +23,7 @@ const Schedule = ({data}) => {
 
   return (
     <Layout>
+      <SEO title="Schedule" description={"Design Week Tallahassee"}/>
       <Section color={"black"}>
         <div className="SchedulePageContent">
           <ScheduleNavigator />

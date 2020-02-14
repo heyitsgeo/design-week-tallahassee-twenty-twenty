@@ -1,44 +1,131 @@
 [
   {
     "id": 0,
+    "level": 2,
     "name": "Copeland Productions",
     "website": "http://copelandproductions.com/",
     "logo_resource": "copeland-logo.png"
   },
   {
     "id": 1,
+    "level": 3,
     "name": "Fresh Impressions Letterpress Studio",
     "website": "https://filetterpress.com/",
     "logo_resource": "frshimp-logo.png"
   },
   {
     "id": 2,
+    "level": 1,
     "name": "Pen & Tool",
     "website": "https://penandtooldesigns.com/",
-    "logo_resource": "pen-logo.png"
+    "logo_resource": "pen-tool-logo.png"
   },
   {
     "id": 3,
+    "level": 4,
     "name": "Rosenfeld",
     "website": "https://rosenfeldmedia.com/",
     "logo_resource": "rosenfeld-logo.png"
   },
   {
     "id": 4,
+    "level": 4,
     "name": "Stickermule",
     "website": "https://www.stickermule.com/",
     "logo_resource": "stickermule-logo.png"
   },
   {
     "id": 5,
+    "level": 1,
     "name": "Tallahassee Downtown",
     "website": "https://tallahasseedowntown.com/",
     "logo_resource": "tallahassee-downtown-logo.png"
   },
   {
     "id": 6,
+    "level": 1,
     "name": "UnderStory",
     "website": "https://understorystudio.com/",
     "logo_resource": "under-story-logo.png"
+  },
+  {
+    "id": 7,
+    "level": 1,
+    "name": "Geo Stokes",
+    "website": "https://instagram.com/geostokes",
+    "logo_resource": "geostokes-logo.png"
+  },
+  {
+    "id": 8,
+    "level": 1,
+    "name": "Center for Innovation",
+    "website": "https://www.tcc.fl.edu/about/locations/center-for-innovation/",
+    "logo_resource": "tcc-logo.png",
+    "scale": 0.75
+  },
+  {
+    "id": 9,
+    "level": 2,
+    "name": "BowStern",
+    "website": "http://bowstern.com/",
+    "logo_resource": "bowstern-logo.png"
+  },
+  {
+    "id": 10,
+    "level": 3,
+    "name": "Fontaine Maury",
+    "website": "https://fontainemaury.com/",
+    "logo_resource": "fontaine-maury-logo.png",
+    "scale": 0.75
+  },
+  {
+    "id": 11,
+    "level": 3,
+    "name": "Social Catering",
+    "website": "https://socialcateringandevents.com/",
+    "logo_resource": "social-catering-logo.png"
+  },
+  {
+    "id": 12,
+    "level": 4,
+    "name": "Current Agency",
+    "website": "https://www.current.agency/",
+    "logo_resource": "current-logo.png"
+  },
+  {
+    "id": 13,
+    "level": 4,
+    "name": "Drift Away",
+    "website": "https://floattally.com/",
+    "logo_resource": "drift-away-logo.png"
+  },
+  {
+    "id": 14,
+    "level": 4,
+    "name": "Target Copy",
+    "website": "https://targetprintmail.com/",
+    "logo_resource": "target-print-logo.png"
+  },
+  {
+    "id": 15,
+    "level": 4,
+    "name": "Innovation Hub",
+    "website": "https://innovation.fsu.edu/",
+    "logo_resource": "innovation-hub-logo.png",
+    "scale": 0.75
+  },
+  {
+    "id": 16,
+    "level": 4,
+    "name": "Real Thread",
+    "website": "https://www.realthread.com/",
+    "logo_resource": "realthread.png"
+  },
+  {
+    "id": 17,
+    "level": 4,
+    "name": "Webflow",
+    "website": "https://webflow.com/",
+    "logo_resource": "webflow-logo.png"
   }
 ]

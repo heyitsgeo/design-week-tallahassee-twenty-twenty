@@ -227,6 +227,8 @@ p {
 
 .btn {
   background-image: linear-gradient(to right, #FBA81A 0%, #F38EBA 100%);
+  font-family: 'jaf-herb', serif;
+  letter-spacing: 4px;
   border-radius: 40px;
   box-sizing: border-box;
   height: 52px;

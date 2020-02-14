@@ -1,10 +1,12 @@
+@import "src/styles/variables";
+
 .SponsorsSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 2vw 0 20vw;
+  padding: 15vw 0 15vw;
 
   .SponsorsSection-thankyou {
     margin-bottom: 1em;
@@ -12,14 +14,37 @@
 
   .SponsorsSection-sponsors {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 
     .link {
       padding: 2em 1em;
     }
     .Sponsor-image {
       width: 200px;
+    }
+  }
+
+  .level {
+    flex: 1;
+    .divider {
+      margin-top: 2vw;
+      height: 2px;
+      background-color: $black;
+      width: 100%;
+    }
+
+    .level-title {
+      text-align: left;
+    }
+
+    .sponsors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
     }
   }
 }

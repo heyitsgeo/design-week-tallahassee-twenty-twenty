@@ -60,8 +60,7 @@ module.exports = {
         name: `design-week-tallahassee`,
         short_name: `design-week-tallahassee`,
         start_url: `/`,
-        // TODO: Add this.
-        //icon: ``, // This path is relative to the root of the site.
+        icon: `src/images/icon/favicon.png`, // This path is relative to the root of the site.
       },
     },
   ],

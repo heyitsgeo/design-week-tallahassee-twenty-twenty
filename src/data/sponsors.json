@@ -53,7 +53,8 @@
     "level": 1,
     "name": "Geo Stokes",
     "website": "https://instagram.com/geostokes",
-    "logo_resource": "geostokes-logo.png"
+    "logo_resource": "geo-stokes-logo.png",
+    "scale": 0.75
   },
   {
     "id": 8,

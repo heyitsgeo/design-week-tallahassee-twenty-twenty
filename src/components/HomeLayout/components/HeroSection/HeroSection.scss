@@ -1,5 +1,13 @@
 @import "src/styles/variables";
 
+.main {
+  &.mobile {
+    .HeroSection {
+      display: none;
+    }
+  }
+}
+
 .HeroSection {
   min-height: 200vh;
 

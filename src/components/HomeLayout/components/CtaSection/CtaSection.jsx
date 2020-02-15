@@ -5,7 +5,7 @@ import './CtaSection.scss';
 
 const CtaSection = () => {
   return (
-    <Section fillScreen={false} hideOverflow={false}>
+    <Section fillScreen={false} hideOverflow={false} transitionTop={true}>
       <div className="CtaSection-content">
         <h1>Design Week Tallahassee</h1>
         <div className='overflow-hidden'>

@@ -18,9 +18,9 @@ const Header = () => {
   `);
   return (
     <header className='Header'>
-      <div className="logo">
+      <a className="logo" href={`/`}>
         <Img className='logo' fixed={data.file.childImageSharp.fixed}/>
-      </div>
+      </a>
       <h3 className="header-name">Design Week Tallahassee</h3>
       <Navigation />
     </header>

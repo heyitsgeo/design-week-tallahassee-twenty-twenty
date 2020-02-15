@@ -42,9 +42,13 @@ class HeroSection extends React.Component {
   };
 
   componentDidMount() {
+    document.ontouchmove = e => e.preventDefault();
     window.addEventListener('scroll', this.positionOnHero);
+
     this.resizeFixedImage();
     window.addEventListener('resize', this.resizeFixedImage);
+    window.addEventListener('touchmove', (e) => e.preventDefault());
+    window.addEventListener('touchstart', (e) => e.preventDefault());
     this.imageContainerAlt.style.top = this.imageContainer.top;
   }
 
@@ -71,19 +75,21 @@ class HeroSection extends React.Component {
     } = this.props;
 
     return (
-      <div className="HeroSection">
-        <Section color="cream" ref={this.setSection} fixed={true} position={{top: '0'}}>
-          <div ref={this.setImageContainer} className="image-container">
-            <Img fluid={data.heroImage.childImageSharp.fluid}/>
-            <h6 className="dates">March 25 - March 29 2020</h6>
-          </div>
-        </Section>
-        <Section color="black" hideOverflow={true} position={{top: '100vh'}}>
-          <div ref={this.setImageContainerAlt} className="image-container-alt">
-            <Img fluid={data.heroImageAlt.childImageSharp.fluid}/>
-            <h6 className="dates">March 25 - March 29 2020</h6>
-          </div>
-        </Section>
+      <div className='desktop-only'>
+        <div className="HeroSection">
+          <Section color="cream" ref={this.setSection} fixed={true} position={{top: '0'}}>
+            <div ref={this.setImageContainer} className="image-container">
+              <Img fluid={data.heroImage.childImageSharp.fluid}/>
+              <h6 className="dates">March 25 - March 29 2020</h6>
+            </div>
+          </Section>
+          <Section color="black" hideOverflow={true} position={{top: '100vh'}}>
+            <div ref={this.setImageContainerAlt} className="image-container-alt">
+              <Img fluid={data.heroImageAlt.childImageSharp.fluid}/>
+              <h6 className="dates">March 25 - March 29 2020</h6>
+            </div>
+          </Section>
+        </div>
       </div>
     )
   }

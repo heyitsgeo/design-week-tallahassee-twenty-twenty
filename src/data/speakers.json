@@ -1,10 +1,11 @@
 [
   {
+    "sort": 2,
     "name": "April Fitzpatrick",
     "title": "Founder & Creative Director of Pineapples With Purpose",
     "social": {
       "website": "https://www.pineappleswithpurpose.com/",
-      "instagram": "@pineappleswithpurpose",
+      "instagram": "pineappleswithpurpose",
       "facebook": "PineappleswithPurpose-689767241496135",
       "linkedin": "",
       "twitter": "",
@@ -13,12 +14,13 @@
     "img-resource": "april-fitzpatrick.png"
   },
   {
-    "name": "Jen Egelfeld",
+    "sort": 3,
+    "name": "Jenn Egelfeld",
     "title": "Multidisciplinary Artist",
     "social": {
       "website": "http://jennegelarts.com",
-      "instagram": "@fiberthreadworkshops",
-      "facebook": "www.facebook.com/fiberthreadworkshops",
+      "instagram": "fiberthreadworkshops",
+      "facebook": "fiberthreadworkshops",
       "linkedin": "",
       "twitter": "",
       "dribble": ""
@@ -26,6 +28,7 @@
     "img-resource": "jen-egelfeld.png"
   },
   {
+    "sort": 4,
     "name": "Tony Gines",
     "title": "Lead Product Designer",
     "social": {
@@ -33,56 +36,60 @@
       "instagram": "",
       "facebook": "",
       "linkedin": "",
-      "twitter": "@tgines",
+      "twitter": "tgines",
       "dribble": ""
     },
     "img-resource": "tony-gines.png"
   },
   {
+    "sort": 5,
     "name": "Bowstern",
     "title": "Marketing Agency",
     "social": {
       "website": "http://bowstern.com",
-      "instagram": "@bowsternagram",
+      "instagram": "bowsternagram",
       "facebook": "",
       "linkedin": "",
-      "twitter": "@bowstern",
+      "twitter": "bowstern",
       "dribble": ""
     },
     "img-resource": "bowstern.png"
   },
   {
+    "sort": 6,
     "name": "Kendrick Kidd",
     "title": "Creative Director At Shepard",
     "social": {
       "website": "http://kendrickkidd.com",
-      "instagram": "@kendrickkidd",
+      "instagram": "kendrickkidd",
       "facebook": "",
       "linkedin": "",
-      "twitter": "@kendrickkidd",
+      "twitter": "kendrickkidd",
       "dribble": ""
     },
     "img-resource": "kendrick-kidd.png"
   },
   {
+    "sort": 7,
     "name": "Maggie Lawrence",
     "title": "Digital Strategist At Marking for Change",
     "social": {
       "website": "http://marketingforchange.com",
-      "instagram": "@m4c_creativesauce",
+      "instagram": "m4c_creativesauce",
       "facebook": "",
       "linkedin": "",
-      "twitter": "@m4changeco",
+      "twitter": "m4changeco",
       "dribble": ""
     },
     "img-resource": "maggie-lawrence.png"
   },
   {
+    "sort": 8,
     "name": "Vanessa Guirey",
     "title": "Graphic Designer at FSU International & Social Media Manager for Tallahassee's Rising OM Yoga",
     "social": {
       "website": "",
-      "instagram": "@vguirey",
+      "instagram": "vguirey",
       "facebook": "",
       "linkedin": "",
       "twitter": "",
@@ -91,12 +98,13 @@
     "img-resource": "vanessa-gurey.png"
   },
   {
+    "sort": 9,
     "name": "Zoe Crook",
     "title": "Social Media Coordinator At FSU Study Aboard",
     "social": {
       "website": "http://international.fsu.edu",
-      "instagram": "@zcrew",
-      "instagram-secondary": "@fsuip",
+      "instagram": "zcrew",
+      "instagram-secondary": "fsuip",
       "facebook": "",
       "linkedin": "",
       "twitter": "",
@@ -105,11 +113,12 @@
     "img-resource": "zoe-crook.png"
   },
   {
+    "sort": 10,
     "name": "Naomi Trad",
     "title": "Designer at Cartoon Network",
     "social": {
       "website": "http://naomitrad.com",
-      "instagram": "@tradpitt",
+      "instagram": "tradpitt",
       "facebook": "",
       "linkedin": "",
       "twitter": "",
@@ -118,11 +127,12 @@
     "img-resource": "naom-trad.png"
   },
   {
+    "sort": 11,
     "name": "Carly Berry",
     "title": "Independent Designer & Illustrator",
     "social": {
       "website": "http://www.carlyberry.me",
-      "instagram": "@itsnotthatweird",
+      "instagram": "itsnotthatweird",
       "facebook": "",
       "linkedin": "",
       "twitter": "",
@@ -136,10 +146,10 @@
     "title": "Co-Founders at Hellcats USA",
     "social": {
       "website": "https://hellcatsusa.com/",
-      "instagram": "@Hellcats.Usa",
+      "instagram": "Hellcats.Usa",
       "facebook": "",
       "linkedin": "",
-      "twitter": "@HellcatsUsa",
+      "twitter": "HellcatsUsa",
       "dribble": ""
     },
     "img-resource": "hellcats.png"
@@ -150,11 +160,11 @@
     "title": "Co-Founder at inch_x_inch",
     "social": {
       "website": "http://bob-ewing.com/",
-      "instagram": "@bobewing_",
+      "instagram": "bobewing_",
       "facebook": "",
       "linkedin": "",
-      "twitter": "@bobewing_",
-      "dribble": "dribbble.com/bobewing"
+      "twitter": "bobewing_",
+      "dribble": "bobewing"
     },
     "img-resource": "bob-ewing.png"
   }

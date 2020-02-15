@@ -22,6 +22,13 @@
     margin: 1em;
     flex: 3;
     min-width: 60%;
+
+    @media only screen  and (max-width : 600px) {
+      width: 100%;
+      //min-width: auto;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
   }
 
   .btn {

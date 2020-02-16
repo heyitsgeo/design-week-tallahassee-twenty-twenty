@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "level": 2,
+    "level": 1,
     "name": "Copeland Productions",
     "website": "http://copelandproductions.com/",
     "logo_resource": "copeland-logo.png"
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "level": 3,
+    "level": 2,
     "name": "Social Catering",
     "website": "https://socialcateringandevents.com/",
     "logo_resource": "social-catering-logo.png"
@@ -117,14 +117,7 @@
   },
   {
     "id": 16,
-    "level": 4,
-    "name": "Real Thread",
-    "website": "https://www.realthread.com/",
-    "logo_resource": "realthread.png"
-  },
-  {
-    "id": 17,
-    "level": 4,
+    "level": 3,
     "name": "Webflow",
     "website": "https://webflow.com/",
     "logo_resource": "webflow-logo.png"

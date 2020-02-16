@@ -11,7 +11,11 @@ const CtaSection = () => {
         <div className='overflow-hidden'>
         <div className="CtaSection-action">
           <h4 className="CtaSection-brief">A 5 day event that welcomes creatives of all <span className='underline pink'>creeds</span> and <span className='underline orange'>kinds</span></h4>
-          <a className='btn' href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789" target="_blank">
+          <a
+            className='btn'
+            href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789"
+            target="_blank"
+            rel="noopener noreferrer">
             <span>Snag Tickets</span>
           </a>
         </div>

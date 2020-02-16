@@ -11,7 +11,11 @@ const SeeYouThereSection = () => {
           <div className="illustration-container">
             <img src={fortuneTeller} alt="fortune teller ball"/>
           </div>
-        <a className='btn' href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789" target="_blank">
+        <a
+          className='btn'
+          href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789"
+          target="_blank"
+          rel="noopener noreferrer">
           <span>Get Tickets</span>
         </a>
       </div>

@@ -46,6 +46,7 @@ const Speaker = ({data, ...rest}) => {
     return Object.keys(social).map(key => {
       if (social[key] && social[key].trim().length > 0) {
         return <a className="Speaker-social-icon"
+                  rel="noopener noreferrer"
                   key={key} href={socialMetaMap[key].baseUrl + social[key]}>{socialMetaMap[key].icon}
         </a>
       }

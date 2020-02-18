@@ -141,6 +141,33 @@
     "img-resource": "carls.png"
   },
   {
+    "sort": 12,
+    "name": "Alyssa Darmanin",
+    "title": "UX Design Lead, Mobility",
+    "social": {
+      "website":  "",
+      "facebook": "",
+      "linkedin": "alyssadarmanin",
+      "twitter": "",
+      "dribble": ""
+    },
+    "img-resource": "alyssa-darmanin.png"
+  },
+  {
+    "sort": 13,
+    "name": "Fontaine Maury",
+    "title": "Brand Design Studio",
+    "social": {
+      "website":  "https://fontainemaury.com/",
+      "facebook": "",
+      "instagram": "fontainemaury",
+      "linkedin": "",
+      "twitter": "fontainemaury",
+      "dribble": ""
+    },
+    "img-resource": "fontaine-muary.png"
+  },
+  {
     "sort": 0,
     "name": "Hellcats",
     "title": "Co-Founders at Hellcats USA",

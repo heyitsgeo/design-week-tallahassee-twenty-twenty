@@ -50,6 +50,7 @@ export const query = graphql`
               end
               title
               description
+              event_link
             }
           }
         }

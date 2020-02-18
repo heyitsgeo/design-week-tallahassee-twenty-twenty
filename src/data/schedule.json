@@ -18,6 +18,7 @@
       {
         "key": 0,
         "title": " Coffee & Creatives",
+        "event_link": "https://www.facebook.com/events/248113546181361",
         "start": "7:30 AM",
         "end": "9:00 AM"
       },
@@ -31,6 +32,7 @@
       {
         "key": 2,
         "title": "The Pineapple Metaphor: Reimagine, Strengthen, Partner",
+        "event_link": "https://www.facebook.com/events/223088638726422",
         "description": "Talk with April Fitzpatrick",
         "start": "12:30 PM",
         "end": "3:30 PM"
@@ -39,6 +41,7 @@
         "key": 3,
         "title": "An Intro to Webflow",
         "description": "Workshop with Tony Gines",
+        "event_link": "https://www.facebook.com/events/1291940914338997",
         "start": "12:30 PM",
         "end": "3:30 PM"
       },
@@ -46,6 +49,7 @@
         "key": 4,
         "title": "Social Media Panel",
         "description": "Talk with Vanessa, Zoe, Maggie and Carly",
+        "event_link": "https://www.facebook.com/events/2598191490413794",
         "start": "4:00 PM",
         "end": "6:00 PM"
       },
@@ -64,13 +68,14 @@
     "agenda": [
       {
         "key": 0,
-        "title": "TBA",
+        "title": "If opportunity doesn't knock, design a door | UX's responsibility in the Future of Mobility",
+        "description": "Talk with Alyssa Darmanin",
         "start": "10:00 AM",
         "end": "11:00 AM"
       },
       {
         "key": 1,
-        "title": "TBD",
+        "title": "Title TBD",
         "description": "Talk with Bob Ewing",
         "start": "11:15 AM",
         "end": "12:00 PM"
@@ -136,7 +141,8 @@
       },
       {
         "key": 4,
-        "title": "TBA",
+        "title": "Going Analog",
+        "description": "Workshop with Fontaine Maury",
         "start": "3:30 PM",
         "end": "5:30 PM"
       },

@@ -19,7 +19,7 @@ const LinkButton = ({children, href, styleClass, target, theme, disabled}) => {
 LinkButton.propTypes = {
   children: propTypes.oneOfType([propTypes.element, propTypes.string]),
   href: propTypes.string,
-  styleClass: propTypes.oneOf(['primary', 'secondary']).isRequired,
+  styleClass: propTypes.oneOf(['primary', 'secondary', 'aqua']).isRequired,
   target: propTypes.string.isRequired,
   theme: propTypes.oneOf(['sunset']).isRequired,
   disabled: propTypes.bool.isRequired

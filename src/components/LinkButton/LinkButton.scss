@@ -40,6 +40,22 @@
       }
     }
 
+    &.aqua {
+
+      &:hover {
+        color: $cream;
+      }
+
+      span {
+        color: $black;
+        background-color: $aqua;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+
     &.secondary {
 
       &:hover {

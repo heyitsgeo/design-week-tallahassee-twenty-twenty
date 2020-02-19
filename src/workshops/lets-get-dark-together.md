@@ -1,7 +1,7 @@
 ---
 title: "Let's Get Dark Together"
 featureImage: ../images/speakers/hellcats.png
-date: "2020-03-27T15:00:00Z"
+date: "2020-03-27T16:30:00Z"
 rsvp: true
 eventbrite: "https://www.eventbrite.com/e/lets-get-dark-together-with-hellcats-tickets-94696733479"
 ---

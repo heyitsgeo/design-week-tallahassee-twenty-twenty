@@ -7,6 +7,7 @@ import '../styles/schedule.scss';
 import { graphql } from 'gatsby';
 import DayAgenda from '../components/DayAgenda';
 import SEO from '../components/seo';
+import DonateOrVolunteerPopout from '../components/DonateOrVolunteerPopout';
 
 const colorMap = {
   'wednesday': 'orange',
@@ -30,6 +31,7 @@ const Schedule = ({data}) => {
           {schedule.edges.map(edge => <DayAgenda key={edge.node.id} schedule={edge.node} color={colorMap[edge.node.day.toLowerCase()]} />)}
         </div>
       </Section>
+      <DonateOrVolunteerPopout style={{bottom: 0, right: 0, position: 'fixed', margin: '1em', width: '320px'}}/>
     </Layout>
   );
 };

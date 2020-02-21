@@ -7,18 +7,19 @@ import './Popout.scss';
 const Popout = (props) => {
   const {
     className,
-    children
+    children,
+    ...rest
   } = props;
 
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className={`Popout ${className}${open ? ' open' : ' closed'}`}>
+    <div className={`Popout ${className}${open ? ' open' : ' closed'}`} {...rest}>
       <button
         className="Popout--toggle-button"
         type="button"
         onClick={() => setOpen(!open)}>
-        {!open && <span className="Popout--open-icon">👋</span>}
+        {!open && <span role="img" aria-label="waving hand emoji" className="Popout--open-icon">👋</span>}
         {open && <FaTimes className="Popout--close-icon"/>}
       </button>
       <div className="Popout--content">

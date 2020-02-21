@@ -4,13 +4,13 @@ import propTypes from 'prop-types';
 import './LinkButton.scss';
 
 
-const LinkButton = ({children, href, styleClass, target, theme, disabled}) => {
+const LinkButton = ({children, href, styleClass, target, theme, disabled, ...rest}) => {
   const handleClick = disabled ? event => event.preventDefault() : () => {};
 
   const disabledClass = disabled ? ' disabled' : '';
 
   return (
-    <a className={`LinkButton ${styleClass} ${theme}${disabledClass}`} href={href} target={target} rel="noopener noreferrer" onClick={handleClick}>
+    <a {...rest} className={`LinkButton ${styleClass} ${theme}${disabledClass}`} href={href} target={target} rel="noopener noreferrer" onClick={handleClick}>
       <span>{children}</span>
     </a>
   )
@@ -29,7 +29,7 @@ LinkButton.defaultProps = {
   styleClass: 'primary',
   target: '_blank',
   theme: 'sunset',
-  disabled: false
+  disabled: false,
 };
 
 export default LinkButton;

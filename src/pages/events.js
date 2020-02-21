@@ -7,6 +7,7 @@ import { DateTime } from 'luxon';
 
 import '../styles/events.scss';
 import SEO from '../components/seo';
+import DonateOrVolunteerPopout from '../components/DonateOrVolunteerPopout';
 
 export function Events({data}) {
   const {
@@ -31,6 +32,7 @@ export function Events({data}) {
             )}
         </div>
       </Section>
+      <DonateOrVolunteerPopout style={{bottom: 0, right: 0, position: 'fixed', margin: '1em', width: '320px'}}/>
     </Layout>
   )
 }

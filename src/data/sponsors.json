@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "level": 2,
+    "level": 3,
     "name": "Social Catering",
     "website": "https://socialcateringandevents.com/",
     "logo_resource": "social-catering-logo.png"
@@ -113,7 +113,7 @@
     "name": "Innovation Hub",
     "website": "https://innovation.fsu.edu/",
     "logo_resource": "innovation-hub-logo.png",
-    "scale": 0.74
+    "scale": 0.7
   },
   {
     "id": 16,
@@ -121,5 +121,13 @@
     "name": "Webflow",
     "website": "https://webflow.com/",
     "logo_resource": "webflow-logo.png"
+  },
+  {
+    "id": 17,
+    "level": 4,
+    "name": "Domi Station",
+    "website": "https://www.domistation.org/",
+    "logo_resource": "domi-logo.png",
+    "scale": 0.7
   }
 ]

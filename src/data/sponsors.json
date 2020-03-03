@@ -129,5 +129,21 @@
     "website": "https://www.domistation.org/",
     "logo_resource": "domi-logo.png",
     "scale": 0.7
+  },
+  {
+    "id": 18,
+    "level": 1,
+    "name": "Tallahassee Downtown",
+    "website": "https://tallahasseedowntown.com/",
+    "logo_resource": "tallahassee-downtown.png",
+    "scale": 0.8
+  },
+  {
+    "id": 19,
+    "level": 1,
+    "name": "Bricks and Brass",
+    "website": "https://www.bricksandbrass850.com/",
+    "logo_resource": "bricks-and-brass.png",
+    "scale": 0.8
   }
 ]

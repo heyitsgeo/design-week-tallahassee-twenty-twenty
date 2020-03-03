@@ -117,7 +117,7 @@
         "key": 1,
         "title": "Vendor Village",
         "start": "7:30 AM",
-        "end": "11:30 AM"
+        "end": "3:00 PM"
       },
       {
         "key": 2,
@@ -141,17 +141,10 @@
       },
       {
         "key": 5,
-        "title": "5 Lessons in Creative Business from Analog Print Journey.",
-        "description": "Keynote with Nick Sambrato",
-        "start": "6:00 PM",
-        "end": "7:00 PM"
-      },
-      {
-        "key": 6,
         "title": "Closing Party",
         "description": "TBA",
-        "start": "9:00 PM",
-        "end": "11:00 PM"
+        "start": "7:30 PM",
+        "end": "9:30 PM"
       }
     ]
   },

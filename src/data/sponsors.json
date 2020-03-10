@@ -77,14 +77,15 @@
     "name": "Fontaine Maury",
     "website": "https://fontainemaury.com/",
     "logo_resource": "fontaine-maury-logo.png",
-    "scale": 0.6
+    "scale": 0.5
   },
   {
     "id": 11,
     "level": 3,
     "name": "Social Catering",
     "website": "https://socialcateringandevents.com/",
-    "logo_resource": "social-catering-logo.png"
+    "logo_resource": "social-catering-logo.png",
+    "scale": 0.6
   },
   {
     "id": 12,
@@ -120,7 +121,8 @@
     "level": 3,
     "name": "Webflow",
     "website": "https://webflow.com/",
-    "logo_resource": "webflow-logo.png"
+    "logo_resource": "webflow-logo.png",
+    "scale": 0.8
   },
   {
     "id": 17,
@@ -145,5 +147,13 @@
     "website": "https://www.bricksandbrass850.com/",
     "logo_resource": "bricks-and-brass.png",
     "scale": 0.8
+  },
+  {
+    "id": 20,
+    "level": 4,
+    "name": "LeMoyne Arts",
+    "website": "http://www.lemoyne.org/",
+    "logo_resource": "lemoyne-logo.png",
+    "scale": 1
   }
 ]

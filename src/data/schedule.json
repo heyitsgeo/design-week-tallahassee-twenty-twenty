@@ -6,6 +6,7 @@
       {
         "key": 0,
         "title": " Kick-Off Event",
+        "event_link": "https://www.facebook.com/events/2430683183910802",
         "start": "6:30 PM",
         "end": "9:30 PM"
       }
@@ -26,6 +27,7 @@
         "key": 1,
         "title": "Cultural Expression in Your Workspace",
         "description": "Talk with Marketing for Change",
+        "event_link": "https://www.facebook.com/events/194426395167220",
         "start": "9:30 AM",
         "end": "10:45 AM"
       },
@@ -57,6 +59,7 @@
         "key": 5,
         "title": "Game Night",
         "description": "At The Current Agency",
+        "event_link": "https://www.facebook.com/events/206319413825760",
         "start": "7:00 PM",
         "end": "9:00 PM"
       }
@@ -70,6 +73,7 @@
         "key": 0,
         "title": "If opportunity doesn't knock, design a door | UX's responsibility in the Future of Mobility",
         "description": "Talk with Alyssa Darmanin",
+        "event_link": "https://www.facebook.com/events/541848759761422",
         "start": "10:00 AM",
         "end": "11:00 AM"
       },
@@ -84,6 +88,7 @@
         "key": 2,
         "title": "Agencies Suck, and other lies. Debunking the myths of the Freelance Industrial Complex.",
         "description": "Talk with Bowstern",
+        "event_link": "https://www.facebook.com/events/592767288239493",
         "start": "1:30 PM",
         "end": "3:00 PM"
       },
@@ -91,6 +96,7 @@
         "key": 3,
         "title": "Let's Get Dark Together",
         "description": "Keynote with Hellcats",
+        "event_link": "https://www.facebook.com/events/220767969078292",
         "start": "6:30 PM",
         "end": "7:30 PM"
       },
@@ -110,6 +116,7 @@
         "key": 0,
         "title": "Don't Cry In The Bathroom At Work ",
         "description": "Talk with Naomi Trad",
+        "event_link": "https://www.facebook.com/events/188008195749783",
         "start": "10:00 AM",
         "end": "10:45 AM"
       },
@@ -123,18 +130,21 @@
         "key": 2,
         "title": "Be Nice. Work Hard. Make the Magic.",
         "description": "Talk with Kendrick Kidd",
+        "event_link": "https://www.facebook.com/events/240364656964291",
         "start": "11:00 AM",
         "end": "12:00 PM"
       },
       {
         "key": 3,
         "title": "Portfolio Review",
+        "event_link": "https://www.facebook.com/events/2836580773065476",
         "start": "1:30 PM",
         "end": "3:00 PM"
       },
       {
         "key": 4,
         "title": "Notebooks, Bills, & Old Love Letters: Handmade Paper from Recycled Scrap",
+        "event_link": "https://www.facebook.com/events/123554912367945",
         "description": "Workshop with Jenn Egelfeld",
         "start": "3:30 PM",
         "end": "5:30 PM"

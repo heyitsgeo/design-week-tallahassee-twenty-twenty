@@ -1,6 +1,6 @@
 ---
 title: "Cultural Expression in Your Workspace"
-featureImage: ../images/speakers/maggie-lawrence.png
+featureImage: ../images/speakers/cultural-expressions-in-workspace.png
 date: "2020-03-26T09:30:00Z"
 rsvp: false
 ---

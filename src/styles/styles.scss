@@ -1,3 +1,9 @@
+@import "src/styles/variables";
+
 .strike-through {
   text-decoration: line-through;
+
+  &--orange {
+    text-decoration-color: $orange;
+  }
 }

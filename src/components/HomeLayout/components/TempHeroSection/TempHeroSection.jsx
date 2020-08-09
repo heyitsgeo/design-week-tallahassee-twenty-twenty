@@ -9,8 +9,9 @@ const TempHeroSection = ({data}) => (
   <Section color="cream" fillScreen={true}>
     <div className="TempHeroSection-content">
       <div className="hero-image-container">
+        {/*<h4 className="announcement">Design Week is going virtual!</h4>*/}
         <Img fluid={data.heroImage.childImageSharp.fluid} />
-        <h6 className={`dates`}>August 21ST &mdash; December 18TH 2020</h6>
+        <h4 className={`dates announcement`}><span className="underline">Going virtual</span> August 21ST &mdash; December 18TH 2020</h4>
       </div>
     </div>
   </Section>

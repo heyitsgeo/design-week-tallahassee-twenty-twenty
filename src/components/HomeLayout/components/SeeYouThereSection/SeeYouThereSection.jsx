@@ -16,7 +16,7 @@ const SeeYouThereSection = () => {
           href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789"
           target="_blank"
           rel="noopener noreferrer">
-          <span>Get Tickets</span>
+          <span>RSVP</span>
         </a>
       </div>
     </Section>

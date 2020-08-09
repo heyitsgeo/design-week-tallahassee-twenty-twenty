@@ -18,3 +18,16 @@
     margin-top: 4vw;
   }
 }
+
+.announcement {
+  background: linear-gradient(to right, $blue 0%, $dark-pink 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  .underline {
+    text-decoration: underline;
+    text-decoration-color: $blue;
+    text-decoration-style: wavy;
+  }
+}

@@ -7,17 +7,17 @@ const CtaSection = () => {
   return (
     <Section fillScreen={false} hideOverflow={false} transitionTop={true}>
       <div className="CtaSection-content">
-        <h1>Design <span className='strike-through'>Week</span> Tallahassee</h1>
+        <h1>Design <span className='strike-through strike-through--orange'>Week</span> Tallahassee</h1>
         <div className='overflow-hidden'>
         <div className="CtaSection-action">
-          <h4 className="CtaSection-brief">A 5 day event that welcomes creatives of all <span className='underline pink'>creeds</span> and <span className='underline orange'>kinds</span></h4>
-          <a
-            className='btn'
-            href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789"
-            target="_blank"
-            rel="noopener noreferrer">
-            <span>Snag Tickets</span>
-          </a>
+          <p className="CtaSection-brief">Here's how it will work: Instead of a single week of back-to-back sessions, DWT will now become a weekly online series. Each Friday from August 21st through December 18th we will host one or two speakers for fun virtual event over Facebook Live. All streams will be honest on the main Design Week Facebook page.</p>
+          {/*<a*/}
+          {/*  className='btn'*/}
+          {/*  href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789"*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer">*/}
+          {/*  <span>Snag Tickets</span>*/}
+          {/*</a>*/}
         </div>
         </div>
       </div>

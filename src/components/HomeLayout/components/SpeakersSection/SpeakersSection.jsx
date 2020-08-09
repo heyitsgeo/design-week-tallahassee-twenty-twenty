@@ -41,14 +41,13 @@ const SpeakersSection = ({ data }) => {
         <p className="SpeakersSection-blurb">we are beyond excited to welcome such a creative and inspiring bunch for
           dwt 2020. our speakers and instructors will bring their experiences, skills, trades, processes and lessons
           they’ve learned along the way to share with us in this incredibly impactful week.</p>
-        <div className="overflow-hidden">
           <div className="SpeakersSection-speakers">
-            {sortedSpeakers().map(node => {
-              return <Speaker key={node.name} speaker={node} />
-            })}
+            <h1 className="SpeakersSection__placeholder">Announcing Soon</h1>
+            {/*{sortedSpeakers().map(node => {*/}
+            {/*  return <Speaker key={node.name} speaker={node} />*/}
+            {/*})}*/}
           </div>
         </div>
-      </div>
     </Section>
   );
 };

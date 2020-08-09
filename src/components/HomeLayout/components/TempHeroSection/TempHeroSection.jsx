@@ -10,7 +10,7 @@ const TempHeroSection = ({data}) => (
     <div className="TempHeroSection-content">
       <div className="hero-image-container">
         <Img fluid={data.heroImage.childImageSharp.fluid} />
-        <h6 className={`dates`}>March 25 &mdash; March 29 2020</h6>
+        <h6 className={`dates`}>August 14 &mdash; ONWARD 2020</h6>
       </div>
     </div>
   </Section>

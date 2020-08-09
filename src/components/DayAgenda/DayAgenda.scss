@@ -1,7 +1,19 @@
 @import "src/styles/variables";
 
+.AgendaItem {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 0.25em;
+}
+
 .DayAgenda {
-  padding: 5vw 0 ;
+  padding: 0;
+
+  .DayAgenda-date {
+    font-size: 10vw;
+    color: $cream;
+  }
+
   .DayAgenda-day-of-week {
     color: $cream;
     font-weight: 300;

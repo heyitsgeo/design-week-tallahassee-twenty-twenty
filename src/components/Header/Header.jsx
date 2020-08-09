@@ -21,7 +21,7 @@ const Header = () => {
       <a className="logo" href={`/`}>
         <Img className='logo' fixed={data.file.childImageSharp.fixed}/>
       </a>
-      <h3 className="header-name">Design Week Tallahassee</h3>
+      <h3 className="header-name">Design <span className='strike-through'>Week</span> Tallahassee</h3>
       <Navigation />
     </header>
   );

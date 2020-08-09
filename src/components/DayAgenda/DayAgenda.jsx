@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import { instanceOf } from 'prop-types';
 
 import './DayAgenda.scss';
 
@@ -19,17 +19,22 @@ const AgendaItem = ({agendaItem}) => {
   );
 };
 
-const DayAgenda = ({schedule, color}) => {
+const DayAgenda = ({date, color, schedule}) => {
+  const formattedDateString = `${date.getMonth()}/${date.getDate()}`;
+
   return (
-    <div className={`DayAgenda ${color}`} id={schedule.day}>
-      <h5 className="DayAgenda-day-of-week">{schedule.day}</h5>
-      <h1 className="DayAgenda-date">{schedule.date}</h1>
+    <div className="DayAgenda">
+      {/*<h5 className="DayAgenda-day-of-week">{schedule.day}</h5>*/}
+      <h4 className="DayAgenda-date">{formattedDateString}</h4>
       <ul className="DayAgenda-agenda">
-        {schedule.agenda.map(item => (
-          <li key={item.key} className="DayAgenda-agenda-item">
-            <AgendaItem agendaItem={item} />
-          </li>
-        ))}
+        {/*{schedule.agenda && schedule.agenda.map(item => (*/}
+        {/*  <li key={item.key} className="DayAgenda-agenda-item">*/}
+        {/*    <AgendaItem agendaItem={item} />*/}
+        {/*  </li>*/}
+        {/*))}*/}
+        <li className="DayAgenda-agenda-item">
+          <h6 className="AgendaItem">TBA</h6>
+        </li>
       </ul>
     </div>
   );
@@ -38,16 +43,5 @@ const DayAgenda = ({schedule, color}) => {
 export default DayAgenda;
 
 DayAgenda.propTypes = {
-  schedule: propTypes.shape({
-    day: propTypes.string.isRequired,
-    date: propTypes.string.isRequired,
-    agenda: propTypes.arrayOf(propTypes.shape({
-      key: propTypes.number.isRequired,
-      title: propTypes.string.isRequired,
-      start: propTypes.string,
-      end: propTypes.string,
-      event_link: propTypes.string
-    })).isRequired
-  }).isRequired,
-  color: propTypes.oneOf(['cream', 'black', 'pink', 'blue', 'orange', 'aqua', 'darkPink']).isRequired
+  date: instanceOf(Date),
 };

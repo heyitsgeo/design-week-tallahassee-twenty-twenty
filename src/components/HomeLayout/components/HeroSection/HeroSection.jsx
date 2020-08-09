@@ -80,13 +80,13 @@ class HeroSection extends React.Component {
           <Section color="cream" ref={this.setSection} fixed={true} position={{top: '0'}}>
             <div ref={this.setImageContainer} className="image-container">
               <Img fluid={data.heroImage.childImageSharp.fluid}/>
-              <h6 className="dates">March 25 - March 29 2020</h6>
+              <h6 className="dates">August 14 - ONWARD 2020</h6>
             </div>
           </Section>
           <Section color="black" hideOverflow={true} position={{top: '100vh'}}>
             <div ref={this.setImageContainerAlt} className="image-container-alt">
               <Img fluid={data.heroImageAlt.childImageSharp.fluid}/>
-              <h6 className="dates">March 25 - March 29 2020</h6>
+              <h6 className="dates">August 14 - ONWARD 2020</h6>
             </div>
           </Section>
         </div>

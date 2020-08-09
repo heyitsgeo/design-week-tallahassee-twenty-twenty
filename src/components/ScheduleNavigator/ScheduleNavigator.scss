@@ -6,7 +6,7 @@
   flex: 1;
   margin-bottom: 8vw;
 
-  .ScheduleNavigator-jump-to-day {
+  .ScheduleNavigator-jump-to-month {
     color: $cream;
     margin-bottom: 0.25em;
   }
@@ -14,11 +14,12 @@
   .ScheduleNavigator-links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     border: 1px solid $cream;
 
-    .day-link {
+    .month-link {
       padding: 1em;
       margin-bottom: 0;
 
@@ -29,31 +30,31 @@
         line-height: 1em;
       }
 
-      &.wednesday {
+      &.orange {
         a {
           color: $orange;
         }
       }
 
-      &.thursday {
+      &.pink {
         a {
           color: $pink;
         }
       }
 
-      &.friday {
+      &.aqua {
         a {
           color: $aqua;
         }
       }
 
-      &.saturday {
+      &.darkPink {
         a {
           color: $dark-pink;
         }
       }
 
-      &.sunday {
+      &.blue {
         a {
           color: $blue;
         }

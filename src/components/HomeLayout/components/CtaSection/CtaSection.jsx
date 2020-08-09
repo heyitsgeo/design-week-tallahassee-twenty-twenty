@@ -7,7 +7,7 @@ const CtaSection = () => {
   return (
     <Section fillScreen={false} hideOverflow={false} transitionTop={true}>
       <div className="CtaSection-content">
-        <h1>Design Week Tallahassee</h1>
+        <h1>Design <span className='strike-through'>Week</span> Tallahassee</h1>
         <div className='overflow-hidden'>
         <div className="CtaSection-action">
           <h4 className="CtaSection-brief">A 5 day event that welcomes creatives of all <span className='underline pink'>creeds</span> and <span className='underline orange'>kinds</span></h4>

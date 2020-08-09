@@ -1,33 +1,43 @@
 import React from 'react';
+import { arrayOf, string, shape } from 'prop-types';
 import { Link } from 'gatsby';
 
 import './ScheduleNavigator.scss';
 
-const ScheduleNavigator = () => {
+const ScheduleNavigator = (props) => {
+  const {
+    links
+  } = props;
+
   return (
     <div className="ScheduleNavigator">
-      <h4 className="ScheduleNavigator-jump-to-day">Jump to day:</h4>
+      <h4 className="ScheduleNavigator-jump-to-month">Jump to month:</h4>
       <div className="overflow-hidden">
         <ul className="ScheduleNavigator-links">
-          <li className="day-link wednesday">
-            <Link to="/schedule/#Wednesday">W</Link>
-          </li>
-          <li className="day-link thursday">
-            <Link to="/schedule/#Thursday">TH</Link>
-          </li>
-          <li className="day-link friday">
-            <Link to="/schedule/#Friday">F</Link>
-          </li>
-          <li className="day-link saturday">
-            <Link to="/schedule/#Saturday">SA</Link>
-          </li>
-          <li className="day-link sunday">
-            <Link to="/schedule/#Sunday">SU</Link>
-          </li>
+          {
+            links.map(link => {
+              return (
+                <li key={`${link.monthName}-navigator-link`} className={`month-link ${link.color}`}>
+                  <Link to={`/schedule/#${link.monthName}`}>
+                    {link.monthName.substring(0, 3).toUpperCase()}
+                  </Link>
+                </li>
+              )
+            })
+          }
         </ul>
       </div>
     </div>
   );
 };
+
+ScheduleNavigator.propTypes = {
+  links: arrayOf(
+    shape({
+      monthName: string.isRequired,
+      color: string.isRequired,
+    })
+  )
+}
 
 export default ScheduleNavigator;

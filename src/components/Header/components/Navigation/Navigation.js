@@ -21,6 +21,9 @@ const Navigation = () => {
               <Link to="/" onClick={() => setNavActive(!navActive)}>Home</Link>
             </li>
             <li className="link">
+              <Link to="/watch" onClick={() => setNavActive(!navActive)}>Watch</Link>
+            </li>
+            <li className="link">
               <Link to="/#speakers" onClick={() => setNavActive(!navActive)}>Speakers</Link>
             </li>
             {/*<li className="link">*/}

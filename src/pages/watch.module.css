@@ -1,0 +1,39 @@
+.container {
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+
+.title-container {
+    margin-bottom: 6em;
+}
+
+.episode-wrapper {
+    margin-bottom: 6em;
+}
+
+.episode-title-row {
+    margin-bottom: 1em;
+}
+
+.episode-title {
+    color: #FBA81A;
+    display: inline-block;
+}
+
+.episode-description {
+    color: #F3E3DB;
+    margin: 1em 0;
+}
+
+.episode-description a {
+    color: #6BC4D5;
+}
+
+.episode-meta {
+    color: #F3E3DB;
+    font-size: 0.85em;
+    padding-top: 0.5em;
+    text-transform: unset;
+    display: inline-block;
+    float: right;
+}

@@ -9,10 +9,7 @@ import '../styles/events.scss';
 import SEO from '../components/seo';
 import DonateOrVolunteerPopout from '../components/DonateOrVolunteerPopout';
 
-export function Events({data}) {
-  const {
-    workshops
-  } = data;
+export function Events() {
 
   function orderWorkshops(workshopEdges) {
     return workshopEdges.sort((o1, o2) => {
@@ -27,9 +24,6 @@ export function Events({data}) {
         <div className="EventsPageContent">
           <h2 className="EventsPageContent-page-title">Events</h2>
           {/*<p className="EventsPageContent-about">This is a spot for a lil' blurb or something if there's a lil' blurb we want to add about this section woohoo</p>*/}
-          {orderWorkshops(workshops.edges).map((edge, index) =>
-            <Workshop key={edge.node.id} workshop={edge.node} direction={index % 2 === 0 ? 'right': 'left'}/>
-            )}
         </div>
       </Section>
       <DonateOrVolunteerPopout style={{bottom: 0, right: 0, position: 'fixed', margin: '1em', width: '320px'}}/>
@@ -38,29 +32,3 @@ export function Events({data}) {
 }
 
 export default Events;
-
-export const query = graphql`
-  query {
-    workshops: allMarkdownRemark {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            title
-            date
-            eventbrite
-            rsvp
-            featureImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;

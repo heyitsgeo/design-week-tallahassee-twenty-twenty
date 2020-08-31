@@ -5,7 +5,6 @@ module.exports = {
     author: `Geo Stokes`,
   },
   plugins: [
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
@@ -41,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/workshops`,
-        name: 'workshops'
+        name: 'episode',
+        path: `${__dirname}/content/episodes`,
       },
     },
     {
@@ -53,6 +52,7 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

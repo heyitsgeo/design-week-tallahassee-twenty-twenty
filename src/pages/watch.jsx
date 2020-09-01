@@ -22,7 +22,6 @@ const Watch = ({ data }) => {
       date: edge.node.frontmatter.date
     }));
 
-  console.log(episodes);
   return (
     <Layout>
       <SEO title="Episodes" description={"Design Week Tallahassee"}/>

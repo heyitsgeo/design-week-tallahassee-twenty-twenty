@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `speakers`,
-        path: `${__dirname}/src/images/speakers`,
+        name: `guest-image`,
+        path: `${__dirname}/content/images/guests`,
       },
     },
     `gatsby-transformer-json`,
@@ -42,6 +42,13 @@ module.exports = {
       options: {
         name: 'episode',
         path: `${__dirname}/content/episodes`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'guest',
+        path: `${__dirname}/content/guests`,
       },
     },
     {

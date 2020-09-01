@@ -14,13 +14,13 @@ const TempHeroSection = ({data}) => (
         <h4 className={`dates announcement`}><span className="underline">Going virtual</span> August 21ST &mdash; December 18TH 2020</h4>
         <div className='action-links'>
           <a
-            className='btn facebook-link'
+            className='facebook-link'
             href="https://www.facebook.com/designweektally/?__tn__=%2Cd%2CP-R&eid=ARAjb_Pt1Dxbn7CUSTIxKe54SGNbMMQ-FRMboMBs5JZdZHMgs4OiSDZWblnEzb46zsk_phtzRE5TGBtf"
             target="_blank"
             rel="noopener noreferrer">
             <span>Watch Live</span>
           </a>
-          <Link className='btn episodes-link' to="/watch"><span>Reruns</span></Link>
+          <Link className='episodes-link' to="/watch"><span>Reruns</span></Link>
         </div>
       </div>
     </div>

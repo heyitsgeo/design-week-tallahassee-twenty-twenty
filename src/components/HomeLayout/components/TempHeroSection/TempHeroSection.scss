@@ -38,6 +38,19 @@
 
 .facebook-link,
 .episodes-link {
+  font-family: 'jaf-herb', serif;
+  letter-spacing: 4px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  height: 52px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 180px;
+  min-width: 180px;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
   padding: 4px;
   display: inline-block;
   margin: 1em;
@@ -46,8 +59,16 @@
   & span {
     color: #3976B8;
     background: #F3E3DB;
+    align-items: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background .5s ease;
+    width: 100%;
 
     &:hover {
+      background: transparent;
       color: #F3E3DB;
     }
   }

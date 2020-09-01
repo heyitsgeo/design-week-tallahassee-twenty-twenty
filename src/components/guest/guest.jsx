@@ -7,7 +7,8 @@ import {
   FaLinkedinIn,
   FaFacebookF,
   FaTwitter,
-  FaDribbble
+  FaDribbble,
+  FaEnvelope
 } from 'react-icons/fa';
 
 import guestStyles from './guest.module.css'
@@ -22,6 +23,7 @@ const Guest = (props) => {
     linkedinUrl,
     twitterUrl,
     dribbbleUrl,
+    email,
     featuredImage
   } = props;
 
@@ -71,6 +73,11 @@ const Guest = (props) => {
             <FaDribbble/>
           </a>
         )}
+        {email && (
+          <a className={guestStyles.socialLink} rel="noopener noreferrer" href={email}>
+            <FaEnvelope/>
+          </a>
+        )}
       </div>
     </div>
   )
@@ -85,6 +92,7 @@ Guest.propTypes = {
   dribbbleUrl: proptypes.string,
   linkedinUrl: proptypes.string,
   twitterUrl: proptypes.string,
+  email: proptypes.string,
   featuredImage: proptypes.shape({
     aspectRatio: proptypes.number,
     src: proptypes.string.isRequired,

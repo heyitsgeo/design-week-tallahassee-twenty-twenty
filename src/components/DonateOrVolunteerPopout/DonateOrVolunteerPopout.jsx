@@ -3,7 +3,6 @@ import LinkButton from '../LinkButton';
 import Popout from '../Popout';
 
 const DonateOrVolunteerPopout = ({...rest}) => {
-  console.log(rest);
  return (
    <Popout className='DonateOrVolunteerPopout' {...rest}>
      <div className="DonateOrVolunteerPopout--content" style={{marginRight: '2em'}}>

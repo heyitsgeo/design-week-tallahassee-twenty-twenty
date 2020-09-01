@@ -5,28 +5,30 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
 import './SpeakersSection.scss';
-import Speaker from './components/Speaker';
+import Guest from '../../../guest';
 
 const SpeakersSection = ({ data }) => {
   const {
-    speakers,
+    allMarkdownRemark,
     pencilIllustration
   } = data;
 
-  function sortedSpeakers() {
-    return speakers.edges.sort((a,b) => {
-      if (a.node.sort == null) {
-        return 1;
-      }
-
-      if (b.node.sort == null) {
-        return -1
-      }
-
-      return a.node.sort - b.node.sort
-    })
-      .map(edge => edge.node);
-  }
+  const guests = allMarkdownRemark.edges
+    .map(edge => ({
+      id: edge.node.id,
+      title: edge.node.frontmatter.title,
+      name: edge.node.frontmatter.name,
+      websiteUrl: edge.node.frontmatter.websiteUrl,
+      instagramUrl: edge.node.frontmatter.instagramUrl,
+      facebookUrl: edge.node.frontmatter.facebookUrl,
+      linkedinUrl: edge.node.frontmatter.linkedinUrl,
+      dribbbleUrl: edge.node.frontmatter.dribbbleUrl,
+      twitterUrl: edge.node.frontmatter.twitterUrl,
+      email: edge.node.frontmatter.email,
+      featuredImage: edge.node.frontmatter.featuredImage &&
+        edge.node.frontmatter.featuredImage.childImageSharp &&
+        edge.node.frontmatter.featuredImage.childImageSharp.fluid,
+    }));
 
   return (
     <Section color="cream" transitionTop={true}>
@@ -38,14 +40,25 @@ const SpeakersSection = ({ data }) => {
           <img src={chattySkull} alt="chatty skull animation"/>
         </div>
         <h2 className='SpeakersSection-title'>Speakers</h2>
-        <p className="SpeakersSection-blurb">we are beyond excited to welcome such a creative and inspiring bunch for
-          dwt 2020. our speakers and instructors will bring their experiences, skills, trades, processes and lessons
-          they’ve learned along the way to share with us in this incredibly impactful week.</p>
+        <p className="SpeakersSection-blurb">Wanna know who's on? Get to know our creative and inspiring guests who have made Design Week Extended Edition possible. They
+          will bring their experiences, skills, and lessons they’ve learned along the way to share with us every week.</p>
           <div className="SpeakersSection-speakers">
-            <h1 className="SpeakersSection__placeholder">Announcing Soon</h1>
-            {/*{sortedSpeakers().map(node => {*/}
-            {/*  return <Speaker key={node.name} speaker={node} />*/}
-            {/*})}*/}
+            {guests.map(guest => (
+              <Guest
+                key={guest.id}
+                name={guest.name}
+                title={guest.title}
+                websiteUrl={guest.websiteUrl}
+                facebookUrl={guest.facebookUrl}
+                dribbbleUrl={guest.dribbbleUrl}
+                instagramUrl={guest.instagramUrl}
+                linkedinUrl={guest.linkedinUrl}
+                twitterUrl={guest.twitterUrl}
+                featuredImage={guest.featuredImage}
+                email={guest.email}
+              />
+              )
+            )}
           </div>
         </div>
     </Section>
@@ -56,25 +69,34 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        speakers: allSpeakersJson {
+        allMarkdownRemark(
+          sort: { order: ASC, fields: frontmatter___name },
+          filter: { frontmatter: { posttype: { eq: "guest" } } }
+        ) {
           edges {
             node {
-              name
-              sort
-              img_resource
-              title
-              social {
-                website
-                instagram
-                facebook
-                linkedin
-                twitter
-                dribble
-                instagram_secondary
+            id,
+            frontmatter {
+              name,
+              title,
+              websiteUrl,
+              dribbbleUrl,
+              facebookUrl,
+              instagramUrl,
+              linkedinUrl,
+              twitterUrl,
+              email,
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 400) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
             }
           }
         }
+      }
         pencilIllustration: file(relativePath: {eq: "loopy-pencil.png"}) {
           childImageSharp {
             fluid(maxWidth: 500) {

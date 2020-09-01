@@ -13,10 +13,10 @@ const SeeYouThereSection = () => {
           </div>
         <a
           className='btn'
-          href="https://www.eventbrite.com/o/aiga-tallahassee-chapter-17086601789"
+          href="https://www.facebook.com/designweektally/?__tn__=%2Cd%2CP-R&eid=ARAjb_Pt1Dxbn7CUSTIxKe54SGNbMMQ-FRMboMBs5JZdZHMgs4OiSDZWblnEzb46zsk_phtzRE5TGBtf"
           target="_blank"
           rel="noopener noreferrer">
-          <span>RSVP</span>
+          <span>Watch Live</span>
         </a>
       </div>
     </Section>

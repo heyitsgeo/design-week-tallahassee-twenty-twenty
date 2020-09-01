@@ -31,3 +31,24 @@
     text-decoration-style: wavy;
   }
 }
+
+.action-links {
+  text-align: center;
+}
+
+.facebook-link,
+.episodes-link {
+  padding: 4px;
+  display: inline-block;
+  margin: 1em;
+  background-image: linear-gradient(to right, #3976B8 0%, #3976B8 100%);
+
+  & span {
+    color: #3976B8;
+    background: #F3E3DB;
+
+    &:hover {
+      color: #F3E3DB;
+    }
+  }
+}

@@ -47,7 +47,7 @@ export default props => (
       query {
         creaturesHorizontalTagLine: file(relativePath: { eq: "creatures-horizontal.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }

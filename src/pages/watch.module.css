@@ -12,6 +12,9 @@
 }
 
 .episode-title-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 1em;
 }
 
@@ -34,6 +37,4 @@
     font-size: 0.85em;
     padding-top: 0.5em;
     text-transform: unset;
-    display: inline-block;
-    float: right;
 }

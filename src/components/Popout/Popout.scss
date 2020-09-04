@@ -28,13 +28,17 @@
   .Popout--toggle-button {
     position: absolute;
     padding: 0;
-    right: 0.4em;
-    bottom: 0.1em;
+    right: 0.1em;
+    bottom: 0;
     background-color: transparent;
     cursor: pointer;
     font-size: 1.5em;
     border: none;
     outline: none;
+    pointer-events: auto;
+    border-radius: 50%;
+    width: 1.95em;
+    height: 1.95em;
 
     &:active {
       box-shadow: none;

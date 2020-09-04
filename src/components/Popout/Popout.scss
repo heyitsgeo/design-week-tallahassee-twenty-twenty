@@ -17,6 +17,8 @@
   }
 
   &.closed {
+    pointer-events: none;
+
     .Popout--toggle-button {
       animation: wiggle 2.5s infinite;
       transform-origin: center bottom;

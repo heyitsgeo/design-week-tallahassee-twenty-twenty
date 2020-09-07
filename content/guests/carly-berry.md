@@ -7,5 +7,5 @@ facebookUrl: https://www.facebook.com/carlycharlesberry
 linkedinUrl: https://www.linkedin.com/in/carlyberry/
 dribbbleUrl: https://dribbble.com/carlyberryisweird
 featuredImage: ../images/guests/carls.png
-posttype: guest
+postType: guest
 ---

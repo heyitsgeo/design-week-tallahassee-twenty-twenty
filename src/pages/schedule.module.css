@@ -1,0 +1,71 @@
+.upcoming-events-title,
+.past-events-title {
+    color: #DF5396;
+    padding: 1em 0;
+}
+
+.page-title {
+    color: #FBA81A;
+}
+
+.page-description {
+    color: #F3E3DB;
+    /*margin-bottom: 2em;*/
+}
+
+.page-description a {
+    color: #6BC4D5;
+}
+
+.event-container {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+
+.event-date-container {
+    background-color: #DF5396;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 4em;
+    justify-content: center;
+    text-align: center;
+    width: 4em;
+}
+.event-month,
+.event-day {
+    margin-bottom: 0;
+}
+
+.event-month {
+
+}
+
+.event-day {
+
+}
+
+.event-description-container {
+    display: flex;
+    flex-direction: column;
+    color: #F3E3DB;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.event-name {
+    margin-bottom: 0.25em;
+}
+
+.event-name a {
+    color: #F3E3DB;
+}
+
+.event-time-and-location {
+    margin-bottom: 0;
+}
+
+.no-upcoming-events {
+    color: #F3E3DB;
+}

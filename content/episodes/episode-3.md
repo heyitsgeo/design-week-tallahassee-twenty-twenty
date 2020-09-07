@@ -1,6 +1,6 @@
 ---
 date: 2020-09-04
-posttype: "episode"
+postType: "episode"
 title: "Episode 3 - Ask A Filmmaker Anything"
 videoSrcUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdesignweektally%2Fvideos%2F637971887121697%2F&show_text=0"
 ---

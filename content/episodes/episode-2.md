@@ -1,6 +1,6 @@
 ---
 date: 2020-08-28
-posttype: "episode"
+postType: "episode"
 title: "Episode 2 - Social Media Panel"
 videoSrcUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdesignweektally%2Fvideos%2F824707364600187%2F&show_text=0"
 ---

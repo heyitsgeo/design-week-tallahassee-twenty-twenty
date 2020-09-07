@@ -71,7 +71,7 @@ export default props => (
       query {
         allMarkdownRemark(
           sort: { order: ASC, fields: frontmatter___name },
-          filter: { frontmatter: { posttype: { eq: "guest" } } }
+          filter: { frontmatter: { postType: { eq: "guest" } } }
         ) {
           edges {
             node {

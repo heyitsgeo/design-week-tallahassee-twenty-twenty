@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.date-container {
+    background-color: #DF5396;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 4em;
+    justify-content: center;
+    min-height: 4em;
+    min-width: 4em;
+    text-align: center;
+    width: 4em;
+}
+
+.month,
+.day {
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    color: #F3E3DB;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.name {
+    margin-bottom: 0.25em;
+}
+
+.name a {
+    color: #F3E3DB;
+}
+
+.time-and-location {
+    margin-bottom: 0;
+}
+
+.description {
+    margin-top: 1em;
+}

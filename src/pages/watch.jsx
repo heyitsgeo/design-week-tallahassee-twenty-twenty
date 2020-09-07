@@ -54,7 +54,7 @@ export const query = graphql`
   query WatchQuery {
     allMarkdownRemark(
       sort: { order: ASC, fields: frontmatter___date },
-      filter: { frontmatter: { posttype: { eq: "episode" } } }
+      filter: { frontmatter: { postType: { eq: "episode" } } }
     ) {
       edges {
         node {

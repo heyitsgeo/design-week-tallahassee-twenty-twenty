@@ -5,5 +5,5 @@ email: mailto:membership@tallahassee.aiga.org
 instagramUrl: https://www.instagram.com/calic0calli3cat/
 linkedinUrl: http://linkedin.com/in/calliemwatson
 featuredImage: ../images/guests/callie-watson.png
-posttype: guest
+postType: guest
 ---

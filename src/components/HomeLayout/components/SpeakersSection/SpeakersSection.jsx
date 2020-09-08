@@ -24,6 +24,7 @@ const SpeakersSection = ({ data }) => {
       linkedinUrl: edge.node.frontmatter.linkedinUrl,
       dribbbleUrl: edge.node.frontmatter.dribbbleUrl,
       twitterUrl: edge.node.frontmatter.twitterUrl,
+      vimeoUrl: edge.node.frontmatter.vimeoUrl,
       email: edge.node.frontmatter.email,
       featuredImage: edge.node.frontmatter.featuredImage &&
         edge.node.frontmatter.featuredImage.childImageSharp &&
@@ -54,6 +55,7 @@ const SpeakersSection = ({ data }) => {
                 instagramUrl={guest.instagramUrl}
                 linkedinUrl={guest.linkedinUrl}
                 twitterUrl={guest.twitterUrl}
+                vimeoUrl={guest.vimeoUrl}
                 featuredImage={guest.featuredImage}
                 email={guest.email}
               />
@@ -85,6 +87,7 @@ export default props => (
               instagramUrl,
               linkedinUrl,
               twitterUrl,
+              vimeoUrl,
               email,
               featuredImage {
                 childImageSharp {

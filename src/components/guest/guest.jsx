@@ -8,7 +8,8 @@ import {
   FaFacebookF,
   FaTwitter,
   FaDribbble,
-  FaEnvelope
+  FaEnvelope,
+  FaVimeoV,
 } from 'react-icons/fa';
 
 import guestStyles from './guest.module.css'
@@ -23,6 +24,7 @@ const Guest = (props) => {
     linkedinUrl,
     twitterUrl,
     dribbbleUrl,
+    vimeoUrl,
     email,
     featuredImage
   } = props;
@@ -78,6 +80,11 @@ const Guest = (props) => {
             <FaEnvelope/>
           </a>
         )}
+        { vimeoUrl && (
+          <a className={guestStyles.socialLink} rel="noopener noreferrer" href={vimeoUrl}>
+            <FaVimeoV/>
+          </a>
+        )}
       </div>
     </div>
   )
@@ -92,6 +99,7 @@ Guest.propTypes = {
   dribbbleUrl: proptypes.string,
   linkedinUrl: proptypes.string,
   twitterUrl: proptypes.string,
+  vimeoUrl: proptypes.string,
   email: proptypes.string,
   featuredImage: proptypes.shape({
     aspectRatio: proptypes.number,

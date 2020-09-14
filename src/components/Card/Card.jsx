@@ -1,6 +1,6 @@
 import React from 'react';
 
-import cardStyles from './card.module.css';
+import cardStyles from './Card.module.css';
 import CardHeader from './CardHeader';
 import CardBody from './CardBody';
 import CardFooter from './CardFooter';

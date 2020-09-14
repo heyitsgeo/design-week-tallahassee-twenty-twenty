@@ -18,8 +18,7 @@ import Img from 'gatsby-image/index';
 const Swag = ({ data }) => {
 
   const {
-    allMarkdownRemark,
-    swagBagIllustration
+    allMarkdownRemark
   } = data;
 
   const swagItems = allMarkdownRemark.edges
@@ -32,8 +31,6 @@ const Swag = ({ data }) => {
         edge.node.frontmatter.featuredImage.childImageSharp &&
         edge.node.frontmatter.featuredImage.childImageSharp.fluid,
     }));
-
-  console.log(swagBagIllustration);
 
   return (
     <DefaultLayout>

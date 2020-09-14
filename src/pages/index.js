@@ -1,18 +1,19 @@
 import React from "react"
 import { graphql } from 'gatsby';
 import { HomeLayout } from '../components/HomeLayout'
-import Layout from '../components/layout';
+import { DefaultLayout } from '../components/layout';
 import SEO from '../components/seo';
+import { colors } from '../constants/colors';
 
 
 class IndexPage extends React.Component {
   render() {
 
     return (
-      <Layout>
+      <DefaultLayout pageColor={colors.cream}>
         <SEO title="Home" description={"Design Week Tallahassee"}/>
         <HomeLayout/>
-      </Layout>
+      </DefaultLayout>
     )
   }
 }

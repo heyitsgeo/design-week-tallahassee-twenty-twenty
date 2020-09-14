@@ -9,9 +9,20 @@
   justify-content: space-between;
   width: 100%;
   z-index: 999;
+  top: 0;
 
   .logo {
     width: 6em;
+  }
+
+  .navigation-actions {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .swag-bag-link {
+    margin-right: 1em;
+    align-self: center;
   }
 
   .header-name {

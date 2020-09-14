@@ -36,6 +36,13 @@ module.exports = {
         path: `${__dirname}/content/images/guests`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `swag-image`,
+        path: `${__dirname}/content/images/swag`,
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -56,6 +63,13 @@ module.exports = {
       options: {
         name: 'event',
         path: `${__dirname}/content/events`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `swag`,
+        path: `${__dirname}/content/swag/`
       }
     },
     {

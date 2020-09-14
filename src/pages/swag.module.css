@@ -1,0 +1,74 @@
+.container {
+    margin-bottom: 6em;
+}
+
+.title-container {
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+
+.img {
+    width: 8em;
+    height: auto;
+    align-self: center;
+    margin: 1em 0;
+}
+
+.btn {
+    display: block;
+    color: #231F20;
+    border: 2px solid #231F20;
+    align-self: flex-end;
+    padding: 0.25em 1em;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3976B8;
+    transition: all .35s;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover:after {
+    width: 100%;
+}
+
+.btn-wrapper {
+
+}
+
+.description {
+    font-weight: lighter;
+}
+
+.cards {
+    margin-top: 2em;
+    display: flex;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-description p {
+    margin-bottom: 1em;
+}

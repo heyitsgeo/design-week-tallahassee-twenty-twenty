@@ -3,7 +3,7 @@ import { DateTime } from 'luxon';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/seo';
-import Layout from '../components/layout';
+import { DefaultLayout } from '../components/layout';
 import DonateOrVolunteerPopout from '../components/DonateOrVolunteerPopout';
 import { Section } from '../components/Section';
 import { Event } from '../components/event/event';
@@ -40,7 +40,7 @@ const Schedule = ({ data }) => {
   const pastEvents = events.filter(event => dateIsInFuture(DateTime.fromISO(event.date)));
 
   return (
-    <Layout>
+    <DefaultLayout>
       <SEO title="Schedule" description={"Design Week Tallahassee"}/>
       <Section color={"black"}>
         <div className="SchedulePageContent">
@@ -60,7 +60,7 @@ const Schedule = ({ data }) => {
         </div>
       </Section>
       <DonateOrVolunteerPopout style={{bottom: 0, right: 0, position: 'fixed', margin: '1em', width: '320px'}}/>
-    </Layout>
+    </DefaultLayout>
   );
 };
 

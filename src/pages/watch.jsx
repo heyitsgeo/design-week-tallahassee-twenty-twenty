@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { DateTime } from 'luxon';
-import Layout from '../components/layout';
+import { DefaultLayout } from '../components/layout';
 import SEO from '../components/seo';
 import DonateOrVolunteerPopout from '../components/DonateOrVolunteerPopout';
 import Video from '../components/video/video';
@@ -23,7 +23,7 @@ const Watch = ({ data }) => {
     }));
 
   return (
-    <Layout>
+    <DefaultLayout>
       <SEO title="Episodes" description={"Design Week Tallahassee"}/>
       <Section color="alt-black">
         <div className={watchStyles.container}>
@@ -46,7 +46,7 @@ const Watch = ({ data }) => {
         </div>
       </Section>
       <DonateOrVolunteerPopout style={{bottom: 0, right: 0, position: 'fixed', margin: '1em', width: '320px'}}/>
-    </Layout>
+    </DefaultLayout>
   );
 };
 

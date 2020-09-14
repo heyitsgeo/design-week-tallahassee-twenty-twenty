@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Navigation from './components/Navigation';
 import './header.scss';
@@ -14,6 +14,13 @@ const Header = () => {
           }
         }
       }
+      swagBagIllustration: file(relativePath: {eq: "swag-bag.png"}) {
+        childImageSharp {
+          fixed(width: 40) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `);
   return (
@@ -22,7 +29,12 @@ const Header = () => {
         <Img className='logo' fixed={data.file.childImageSharp.fixed}/>
       </a>
       <h3 className="header-name">Design <span className='strike-through'>Week</span> Tallahassee</h3>
-      <Navigation />
+      <div className="navigation-actions">
+        <Link to="/swag" className="swag-bag-link">
+          <Img fixed={data.swagBagIllustration.childImageSharp.fixed}/>
+        </Link>
+        <Navigation />
+      </div>
     </header>
   );
 };

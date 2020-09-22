@@ -23,7 +23,8 @@ const Schedule = ({ data }) => {
       location: edge.node.frontmatter.location,
       name: edge.node.frontmatter.name,
       date: edge.node.frontmatter.date,
-      eventUrl: edge.node.frontmatter.eventUrl
+      eventUrl: edge.node.frontmatter.eventUrl,
+      description: edge.node.html
     }));
 
   const dateIsInFuture = (date) => {
@@ -48,7 +49,13 @@ const Schedule = ({ data }) => {
           <p className={scheduleStyles.pageDescription}>We will be dropping new events from now until the end of the year. Check in here or on our  <a href="https://www.facebook.com/designweektally" target="_blank" rel="noopener noreferrer">Facebook</a> to see what's coming next.</p>
           <h5 className={scheduleStyles.upcomingEventsTitle}>Upcoming</h5>
           {upcomingEvents.map(event => (
-            <Event key={event.id} date={event.date} name={event.name} location={event.location} eventUrl={event.eventUrl} />
+            <Event
+              key={event.id}
+              date={event.date}
+              name={event.name}
+              location={event.location}
+              eventUrl={event.eventUrl}
+              description={event.description} />
           ))}
           {upcomingEvents.length === 0 && (
             <h4 className={scheduleStyles.noUpcomingEvents}>Check back soon.</h4>
@@ -74,12 +81,13 @@ export const query = graphql`
       ) {
         edges {
           node {
-          id
+          id,
+          html
           frontmatter {
               date,
               name,
               location,
-              eventUrl
+              eventUrl,
             }
           }
         }

@@ -45,3 +45,7 @@
 .description {
     margin-top: 1em;
 }
+
+.description a {
+    color: #6BC4D5;
+}

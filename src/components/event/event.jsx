@@ -30,7 +30,7 @@ export const Event = (props) => {
         </h4>
         <h6 className={eventStyles.timeAndLocation}>{location} - {time}</h6>
         { description && (
-          <p className={eventStyles.description} dangerouslySetInnerHTML={description} />)
+          <p className={eventStyles.description} dangerouslySetInnerHTML={{ __html: description }} />)
         }
       </div>
     </div>

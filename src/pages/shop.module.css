@@ -1,0 +1,13 @@
+.shop__container {
+    margin-bottom: 6em;
+}
+
+.shop__products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shop__product {
+    flex: 1;
+}

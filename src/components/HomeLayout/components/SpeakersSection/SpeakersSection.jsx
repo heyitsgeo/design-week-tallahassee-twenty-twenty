@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from '../../../Section';
-import chattySkull from '../../../../images/skull-animation.gif';
+import chattySkull from '../../../../../content/images/skull-animation.gif';
 import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 

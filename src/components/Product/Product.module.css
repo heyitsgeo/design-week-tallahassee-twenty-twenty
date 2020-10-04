@@ -1,0 +1,27 @@
+.product__container {
+}
+
+.product__description {
+    margin-top: 2rem;
+}
+
+.product__featured-image-container {
+    overflow: hidden;
+    width: 17rem;
+    height: 17rem;
+    margin: 0 auto;
+}
+
+.product__featured-image {
+}
+
+.product__purchase-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__price {
+    margin-bottom: 0;
+}

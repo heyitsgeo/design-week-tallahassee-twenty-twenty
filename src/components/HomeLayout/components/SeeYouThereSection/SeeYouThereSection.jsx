@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from '../../../Section';
-import fortuneTeller from '../../../../images/see-you-there.gif';
+import fortuneTeller from '../../../../../content/images/see-you-there.gif';
 
 import './SeeYouThereSection.scss';
 

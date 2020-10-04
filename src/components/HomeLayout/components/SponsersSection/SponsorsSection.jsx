@@ -10,46 +10,61 @@ const DEFAULT_IMAGE_WIDTH = 200;
 const SponsorsSection = ({data}) => {
   const {
     sponsors,
-    sponsorsImages
   } = data;
 
-  function getImageByName(imgResource, scale) {
-    const foundImage = sponsorsImages.edges
-      .filter(edge => edge.node.childImageSharp && edge.node.childImageSharp.fluid)
-      .find(safeEdge => safeEdge.node.childImageSharp.fluid.originalName === imgResource);
+  function sponsorsForLevel(level) {
+    const { edges } = sponsors;
+    return edges
+      .filter((edge) => edge.node.frontmatter.level === level)
+      .map(edge => ({
+        id: edge.node.id,
+        scale: edge.node.frontmatter.logoScale,
+        websiteUrl: edge.node.frontmatter.websiteUrl,
+        fluidImageProps: imageFromNode(edge.node)
+      }));
+  }
 
-    if (foundImage) {
-      const scaledWidth = scale ? DEFAULT_IMAGE_WIDTH * scale : null;
+  const imageFromNode = (node) => {
+    if (!node) {
+      return null;
+    }
 
-      let style = {};
+    const {
+      frontmatter
+    } = node;
 
-      if (scaledWidth) {
-        style = {
-          width: scaledWidth
-        }
+    if (frontmatter && frontmatter.logo) {
+      if (frontmatter.logo.hasOwnProperty('childImageSharp')) {
+        return frontmatter.logo.childImageSharp.fluid;
+      } else {
+        console.error('Unable to locate childImageSharp props for: ' + node.id + '. Review post details.')
       }
-
-      const imageProps = foundImage.node.childImageSharp.fluid;
-      return (
-        <div className="Sponsor-image" style={style}>
-          <Img fluid={imageProps}/>
-        </div>
-      )
+    } else {
+      console.error('logo is undefined for: ' + node.id);
     }
   }
 
-  function sponsorsForLevel(level) {
-    return sponsors.edges
-      .filter(edge => edge.node.level === level)
-      .map(edge => edge.node);
-  }
+  function getImageLink(imageProps, scale, key, website) {
+    const scaledWidth = scale ? DEFAULT_IMAGE_WIDTH * scale : null;
 
-  function getImageLink(imageProps) {
-    return (
-      <a className="link" key={imageProps.id} href={imageProps.website}>
-        {getImageByName(imageProps.logo_resource, imageProps.scale)}
+    let style = {
+      display: 'block'
+    };
+
+    if (scaledWidth) {
+      style = {
+        ...style,
+        width: scaledWidth
+      }
+    }
+
+    return imageProps ? (
+      <a className="link" key={key} href={website}>
+        <span className="Sponsor-image" style={style}>
+          <Img fluid={imageProps}/>
+        </span>
       </a>
-    );
+    ) : <a className="link" key={key} href={website}>{website}</a>;
   }
 
   return (
@@ -61,28 +76,48 @@ const SponsorsSection = ({data}) => {
             <div className="divider" />
             <h6 className="level-title">Godzilla</h6>
             <div className="sponsors">
-              {sponsorsForLevel(1).map(node => getImageLink(node))}
+              {sponsorsForLevel(1).map(sponsor => getImageLink(
+                sponsor.fluidImageProps,
+                sponsor.scale,
+                sponsor.id,
+                sponsor.websiteUrl
+              ))}
             </div>
           </div>
           <div className="level">
             <div className="divider" />
             <h6 className="level-title">Demogorgon</h6>
             <div className="sponsors">
-              {sponsorsForLevel(2).map(node => getImageLink(node))}
+              {sponsorsForLevel(2).map(sponsor => getImageLink(
+                sponsor.fluidImageProps,
+                sponsor.scale,
+                sponsor.id,
+                sponsor.websiteUrl
+              ))}
             </div>
           </div>
           <div className="level">
             <div className="divider" />
             <h6 className="level-title">The Swamp Creature</h6>
             <div className="sponsors">
-              {sponsorsForLevel(3).map(node => getImageLink(node))}
+              {sponsorsForLevel(3).map(sponsor => getImageLink(
+                sponsor.fluidImageProps,
+                sponsor.scale,
+                sponsor.id,
+                sponsor.websiteUrl
+              ))}
             </div>
           </div>
           <div className="level">
             <div className="divider" />
             <h6 className="level-title">Mad Scientist</h6>
             <div className="sponsors">
-              {sponsorsForLevel(4).map(node => getImageLink(node))}
+              {sponsorsForLevel(4).map(sponsor => getImageLink(
+                sponsor.fluidImageProps,
+                sponsor.scale,
+                sponsor.id,
+                sponsor.websiteUrl
+              ))}
             </div>
           </div>
         </div>
@@ -95,25 +130,24 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        sponsors: allSponsorsJson {
+        sponsors: allMarkdownRemark(
+          sort: { order: ASC, fields: frontmatter___name },
+          filter: { frontmatter: { postType: { eq: "sponsor" } } }
+        ) {
           edges {
             node {
-              id
-              name
-              website
-              logo_resource
-              level
-              scale
-            }
-          }
-        }
-        sponsorsImages: allFile(filter: {sourceInstanceName: {eq: "images"}}) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                originalName
-                ...GatsbyImageSharpFluid
+            id,
+            frontmatter {
+              name,
+              level,
+              websiteUrl,
+              logoScale,
+              logo {
+                childImageSharp {
+                  fluid(maxWidth: 400) {
+                    ...GatsbyImageSharpFluid
+                   }
+                  }
                 }
               }
             }

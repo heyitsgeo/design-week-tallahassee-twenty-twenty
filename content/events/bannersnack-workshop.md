@@ -1,7 +1,7 @@
 ---
 date: 2020-10-02T16:00:00Z
 name: Bannersnack Workshop
-eventUrl: https://www.facebook.com/designweektally/
+eventUrl: https://www.facebook.com/530590243768038/videos/758322958358715/
 location: Live on Facebook
 postType: event
 ---

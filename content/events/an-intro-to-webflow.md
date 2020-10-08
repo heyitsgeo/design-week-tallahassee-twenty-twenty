@@ -1,7 +1,7 @@
 ---
 date: 2020-09-25T16:00:00Z
 name: An Intro to Webflow
-eventUrl: https://www.facebook.com/designweektally/
+eventUrl: https://www.facebook.com/530590243768038/videos/327486075147500/
 location: Live on Facebook
 postType: event
 ---

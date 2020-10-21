@@ -37,8 +37,11 @@ const Schedule = ({ data }) => {
     return date < today;
   }
 
-  const upcomingEvents = events.filter(event => !dateIsInFuture(DateTime.fromISO(event.date)));
-  const pastEvents = events.filter(event => dateIsInFuture(DateTime.fromISO(event.date)));
+  const upcomingEvents = events
+    .filter(event => !dateIsInFuture(DateTime.fromISO(event.date)))
+    .reverse();
+  const pastEvents = events
+    .filter(event => dateIsInFuture(DateTime.fromISO(event.date)));
 
   return (
     <DefaultLayout>

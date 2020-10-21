@@ -19,6 +19,7 @@ const SpeakersSection = ({ data }) => {
       title: edge.node.frontmatter.title,
       name: edge.node.frontmatter.name,
       websiteUrl: edge.node.frontmatter.websiteUrl,
+      websiteAltUrl: edge.node.frontmatter.websiteAltUrl,
       instagramUrl: edge.node.frontmatter.instagramUrl,
       facebookUrl: edge.node.frontmatter.facebookUrl,
       linkedinUrl: edge.node.frontmatter.linkedinUrl,
@@ -50,6 +51,7 @@ const SpeakersSection = ({ data }) => {
                 name={guest.name}
                 title={guest.title}
                 websiteUrl={guest.websiteUrl}
+                websiteAltUrl={guest.websiteAltUrl}
                 facebookUrl={guest.facebookUrl}
                 dribbbleUrl={guest.dribbbleUrl}
                 instagramUrl={guest.instagramUrl}
@@ -82,6 +84,7 @@ export default props => (
               name,
               title,
               websiteUrl,
+              websiteAltUrl,
               dribbbleUrl,
               facebookUrl,
               instagramUrl,

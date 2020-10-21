@@ -21,6 +21,7 @@ const Guest = (props) => {
     facebookUrl,
     instagramUrl,
     websiteUrl,
+    websiteAltUrl,
     linkedinUrl,
     twitterUrl,
     dribbbleUrl,
@@ -65,6 +66,11 @@ const Guest = (props) => {
             <FaLink/>
           </a>
         )}
+        {websiteAltUrl && (
+          <a className={guestStyles.socialLink} rel="noopener noreferrer" href={websiteUrl}>
+            <FaLink/>
+          </a>
+        )}
         {linkedinUrl && (
           <a className={guestStyles.socialLink} rel="noopener noreferrer" href={linkedinUrl}>
             <FaLinkedinIn/>
@@ -96,6 +102,7 @@ Guest.propTypes = {
   facebookUrl: proptypes.string,
   instagramUrl: proptypes.string,
   websiteUrl: proptypes.string,
+  websiteAltUrl: proptypes.string,
   dribbbleUrl: proptypes.string,
   linkedinUrl: proptypes.string,
   twitterUrl: proptypes.string,

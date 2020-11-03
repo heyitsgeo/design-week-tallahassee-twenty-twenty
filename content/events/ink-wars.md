@@ -1,7 +1,7 @@
 ---
 date: 2020-10-23T16:00:00Z
 name: Ink Wars
-eventUrl: https://www.facebook.com/designweektally
+eventUrl: https://www.facebook.com/530590243768038/videos/266797658047828
 location: Live on Facebook
 postType: event
 ---

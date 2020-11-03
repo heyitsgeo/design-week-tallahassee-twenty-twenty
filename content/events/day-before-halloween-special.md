@@ -1,7 +1,7 @@
 ---
 date: 2020-10-29T16:00:00Z
 name: Day Before Halloween Special
-eventUrl: https://www.facebook.com/designweektally
+eventUrl: https://www.facebook.com/designweektally/videos/378959006791429
 location: Live on Facebook
 postType: event
 ---

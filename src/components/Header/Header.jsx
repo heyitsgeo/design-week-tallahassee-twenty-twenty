@@ -23,7 +23,6 @@ const Header = () => {
       }
     }
   `);
-  console.log(data);
   return (
     <header className='Header'>
       <a className="logo" href={`/`}>

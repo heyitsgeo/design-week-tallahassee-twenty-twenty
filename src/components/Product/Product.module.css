@@ -1,4 +1,5 @@
 .product__container {
+    width: 100%;
 }
 
 .product__description {
@@ -24,4 +25,13 @@
 
 .product__price {
     margin-bottom: 0;
+}
+
+@media only screen and (max-width : 600px) {
+    .product__featured-image-container {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }

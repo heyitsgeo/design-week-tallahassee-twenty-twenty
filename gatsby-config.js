@@ -1,4 +1,7 @@
 const path = require('path');
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 
 module.exports = {
   siteMetadata: {
@@ -24,7 +27,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-snipcartv3',
       options: {
-        apiKey: 'OWNjNmU3MjktNzg1ZS00ZDA3LTllMzQtNjE4MmY3NTJjZDEyNjM3MzY0MTEzNzY1OTUxMDc0'
+        apiKey: process.env.SNIPCART_API_KEY
       }
     },
     {

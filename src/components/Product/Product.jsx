@@ -14,31 +14,34 @@ const Product = (props) => {
     itemDescription,
     itemSizes,
     featuredImage,
-    className
+    className,
+    dimensions,
+    year,
   } = props;
-  
+
   if (!featuredImage) {
     console.error('Missing featuredImage for: ' + itemName);
   }
 
   const snipCartProps = {
-    'data-item-id': itemId,
+    'data-item-id': `${itemId}`,
     'data-item-price': itemPrice,
-    'data-item-url': `https://d47c3290616a.ngrok.io/products/${itemId}.json`,
-    'data-item-name': itemName,
+    'data-item-url': process.env.GATSBY_SNIPCART_PRODUCT_JSON_URL,
+    'data-item-name': `${year} - ${itemName}`,
     'data-item-description': itemDescription,
+    'data-item-weight': dimensions && dimensions.weight,
     'data-item-image': featuredImage && featuredImage.src,
   }
 
   if (itemSizes) {
-    snipCartProps['data-item-custom1-name'] = ' Sizes';
+    snipCartProps['data-item-custom1-name'] = ' Size';
     snipCartProps['data-item-custom1-options'] = itemSizes.join('|');
   }
 
   return (
     <div className={`${productStyles.product__container} ${className}`}>
       <Card>
-        <Card.Header>{itemName}</Card.Header>
+        <Card.Header>{year} &ndash; {itemName}</Card.Header>
         <Card.Body>
           <div className={productStyles.product__featuredImageContainer}>
             <Img fluid={featuredImage} className={productStyles.product__featuredImage} />
@@ -72,4 +75,5 @@ Product.propTypes = {
   itemSizes: propTypes.array,
   className: propTypes.string,
   featuredImage: propTypes.any,
+  year: propTypes.number,
 }

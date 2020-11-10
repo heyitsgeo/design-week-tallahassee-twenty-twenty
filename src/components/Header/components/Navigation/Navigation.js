@@ -26,14 +26,14 @@ const Navigation = () => {
             <li className="link">
               <Link to="/#speakers" onClick={() => setNavActive(!navActive)}>Speakers</Link>
             </li>
-            {/*<li className="link">*/}
-            {/*  <Link to="/events" onClick={() => setNavActive(!navActive)}>Events</Link>*/}
-            {/*</li>*/}
             <li className="link">
               <Link to="/schedule" onClick={() => setNavActive(!navActive)}>Schedule</Link>
             </li>
             <li className="link">
               <Link to="/swag" onClick={() => setNavActive(!navActive)}>Swag</Link>
+            </li>
+            <li className="link">
+              <Link to="/shop" onClick={() => setNavActive(!navActive)}>Shop</Link>
             </li>
             <li className="link">
               <a href="https://www.facebook.com/designweektally" target="_blank" rel="noopener noreferrer">Facebook</a>

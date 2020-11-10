@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Geo Stokes <gms3692@gmail.com",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.25.3",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-manifest": "^2.2.31",
@@ -31,6 +32,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "front-matter": "^4.0.2",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -41,12 +43,13 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "npm run productsJson && gatsby build",
+    "develop": "npm run productsJson && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "productsJson": "node ./scripts/create-products-json.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

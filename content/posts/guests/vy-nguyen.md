@@ -5,6 +5,6 @@ websiteUrl: https://www.vynguyenfilms.com/
 facebookUrl: https://www.facebook.com/vynguyenfilms
 instagramUrl: https://www.instagram.com/vynguyenfilms/
 vimeoUrl: https://vimeo.com/vynguyenfilms
-featuredImage: ../../images/guests/vy-nguyen.png
+featuredImage: ./vy-nguyen.png
 postType: guest
 ---

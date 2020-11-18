@@ -38,6 +38,9 @@ const Guest = (props) => {
       .join('-');
   }
 
+  console.log(name);
+  console.log(featuredImage);
+
   return (
     <div className={guestStyles.container} id={getIdForGuest(name)}>
       <div className={guestStyles.imageContainer}>

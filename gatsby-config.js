@@ -50,78 +50,7 @@ module.exports = {
         path: path.join(__dirname, `content`, `posts`)
       }
     },
-    // `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images/**/*`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `guest-image`,
-    //     path: `${__dirname}/content/images/guests`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `swag-image`,
-    //     path: `${__dirname}/content/images/swag`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/content/images/**`,
-    //   },
-    // },
     `gatsby-transformer-json`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: 'episode',
-    //     path: `${__dirname}/content/episodes`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: 'guest',
-    //     path: `${__dirname}/content/guests`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: 'event',
-    //     path: `${__dirname}/content/events`,
-    //   }
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `swag`,
-    //     path: `${__dirname}/content/swag/`
-    //   }
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `product`,
-    //     path: `${__dirname}/content/products/`
-    //   }
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `data`,
-    //     path: `${__dirname}/src/data/`
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

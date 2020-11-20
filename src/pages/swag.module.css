@@ -78,6 +78,13 @@
     height: 20rem;
     padding: 0.5rem;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    flex: 1
 }
 
 .collect-row {

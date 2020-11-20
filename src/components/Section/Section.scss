@@ -61,6 +61,26 @@
     }
   }
 
+  &.pink {
+    background-color: $pink;
+
+    .Section-transition {
+      path {
+        fill: $pink;
+      }
+    }
+  }
+
+  &.orange {
+    background-color: $orange;
+
+    .Section-transition {
+      path {
+        fill: $orange;
+      }
+    }
+  }
+
   &.aqua {
     background-color: $aqua;
 

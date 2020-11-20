@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from '../../../Section';
 import { graphql, StaticQuery } from 'gatsby';
 import propTypes from 'prop-types';
-import cupGuy from '../../../../images/cup-guy.gif';
+import cupGuy from '../../../../../content/images/cup-guy.gif';
 import Img from 'gatsby-image';
 
 

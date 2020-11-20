@@ -1,3 +1,8 @@
+const path = require('path');
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 module.exports = {
   siteMetadata: {
     title: `Design Week Tallahassee`,
@@ -6,6 +11,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-image`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
@@ -16,79 +25,39 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-snipcartv3',
+      options: {
+        apiKey: process.env.SNIPCART_API_KEY
+      }
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`
       }
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, `content`, `images`),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `guest-image`,
-        path: `${__dirname}/content/images/guests`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `swag-image`,
-        path: `${__dirname}/content/images/swag`,
-      },
+        name: 'posts',
+        path: path.join(__dirname, `content`, `posts`)
+      }
     },
     `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'episode',
-        path: `${__dirname}/content/episodes`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'guest',
-        path: `${__dirname}/content/guests`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'event',
-        path: `${__dirname}/content/events`,
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `swag`,
-        path: `${__dirname}/content/swag/`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`
-      }
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `design-week-tallahassee`,
         short_name: `design-week-tallahassee`,
         start_url: `/`,
-        icon: `src/images/icon/favicon.png`, // This path is relative to the root of the site.
+        icon: path.join(__dirname, `content`, `images`, `favicon.png`), // This path is relative to the root of the site.
       },
     },
   ],

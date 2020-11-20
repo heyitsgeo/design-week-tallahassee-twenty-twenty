@@ -1,0 +1,23 @@
+.shop__container {
+    margin-bottom: 6em;
+}
+
+.shop__products {
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, 18.25rem);
+}
+
+.shop__product {
+}
+
+@media only screen and (max-width : 600px) {
+    .shop__products {
+        display: block;
+    }
+
+    .shop__product {
+        margin-bottom: 1em;
+    }
+}

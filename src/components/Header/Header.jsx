@@ -7,14 +7,14 @@ import './header.scss';
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo/blue-logo.png" }) {
+      logo: file(absolutePath: { regex: "/images/blue-logo.png/" }) {
         childImageSharp {
           fixed(width: 142) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      swagBagIllustration: file(relativePath: {eq: "swag-bag.png"}) {
+      swagBagIllustration: file(absolutePath: { regex: "/images/swag-bag.png/" }) {
         childImageSharp {
           fixed(width: 40) {
             ...GatsbyImageSharpFixed
@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className='Header'>
       <a className="logo" href={`/`}>
-        <Img className='logo' fixed={data.file.childImageSharp.fixed}/>
+        <Img className='logo' fixed={data.logo.childImageSharp.fixed}/>
       </a>
       <h3 className="header-name">Design <span className='strike-through'>Week</span> Tallahassee</h3>
       <div className="navigation-actions">

@@ -1,4 +1,6 @@
 @import "src/styles/variables";
+//@import "debug";
+
 .strike-through {
   text-decoration: line-through;
 
@@ -17,4 +19,14 @@
 
 .text--orange {
   color: $orange;
+}
+
+#snipcart {
+  .snipcart-modal__container {
+    z-index: 9999;
+    background-color: black;
+  }
+  h2 {
+    letter-spacing: normal;
+  }
 }

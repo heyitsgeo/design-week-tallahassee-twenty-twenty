@@ -46,12 +46,16 @@ const Swag = ({ data }) => {
               <Card key={swagItem.id}>
                 <Card.Header>{swagItem.name}</Card.Header>
                 <Card.Body>
-                  <Img fluid={swagItem.featuredImage} className={swagStyles.img} />
+                  <div className={swagStyles.imageContainer}>
+                    <Img fluid={swagItem.featuredImage} className={swagStyles.img} />
+                  </div>
                 </Card.Body>
                 <Card.Footer>
-                  <a className={swagStyles.btn} href={swagItem.downloadPath} download>
-                    <span>Collect</span>
-                  </a>
+                  <div className={swagStyles.collectRow}>
+                    <a className={swagStyles.btn} href={swagItem.downloadPath} download>
+                      <span>Collect</span>
+                    </a>
+                  </div>
                 </Card.Footer>
               </Card>
             ))}

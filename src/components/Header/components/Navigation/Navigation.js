@@ -32,9 +32,12 @@ const Navigation = () => {
             <li className="link">
               <Link to="/swag" onClick={() => setNavActive(!navActive)}>Swag</Link>
             </li>
-            <li className="link">
-              <Link to="/shop" onClick={() => setNavActive(!navActive)}>Shop</Link>
-            </li>
+            {
+              process.env.GATSBY_SHOP_TURNED_ON === 'true' && (
+              <li className="link">
+                <Link to="/shop" onClick={() => setNavActive(!navActive)}>Shop</Link>
+              </li>)
+            }
             <li className="link">
               <a href="https://www.facebook.com/designweektally" target="_blank" rel="noopener noreferrer">Facebook</a>
             </li>

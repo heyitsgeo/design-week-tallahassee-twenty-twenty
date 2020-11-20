@@ -3,6 +3,7 @@
     "id": "2016_magnet",
     "price": "5.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Magnet",
     "dimensions": {
       "weight": 29
     },
@@ -12,6 +13,7 @@
     "id": "2016_pin",
     "price": "5.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Pin",
     "dimensions": {
       "weight": 29
     },
@@ -21,6 +23,7 @@
     "id": "2016_poster_carmen_clemente",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Carmen Clemente",
     "dimensions": {
       "weight": 86
     },
@@ -30,6 +33,7 @@
     "id": "2016_poster_brannon_solomon",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Brannon Solomon",
     "dimensions": {
       "weight": 86
     },
@@ -39,6 +43,7 @@
     "id": "2016_poster_arson_howse",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Carson Howse",
     "dimensions": {
       "weight": 86
     },
@@ -48,6 +53,7 @@
     "id": "2016_sticker_b",
     "price": "2.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Sticker",
     "dimensions": {
       "weight": 29
     },
@@ -57,55 +63,111 @@
     "id": "2016_tee_grey",
     "price": "18.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Grey Tee",
     "inventoryManagementMethod": "Variant",
     "variants": [
       {
-        "name": "size",
-        "option": "Men's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's XXL"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's XXL"
+          }
+        ]
+      }
+    ],
+    "customFields": [
+      {
+        "name": "Size",
+        "options": "Men's Extra Small|Men's Small|Men's Medium|Men's Large|Men's Extra Large|Men's XXL|Women's Extra Small|Women's Small|Women's Medium|Women's Large|Women's Extra Large|Women's XXL",
+        "type": "dropdown"
       }
     ],
     "dimensions": {
@@ -116,55 +178,111 @@
     "id": "2016_tee_purple",
     "price": "18.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Purple Tee",
     "inventoryManagementMethod": "Variant",
     "variants": [
       {
-        "name": "size",
-        "option": "Men's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's XXL"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's XXL"
+          }
+        ]
+      }
+    ],
+    "customFields": [
+      {
+        "name": "Size",
+        "options": "Men's Extra Small|Men's Small|Men's Medium|Men's Large|Men's Extra Large|Men's XXL|Women's Extra Small|Women's Small|Women's Medium|Women's Large|Women's Extra Large|Women's XXL",
+        "type": "dropdown"
       }
     ],
     "dimensions": {
@@ -175,6 +293,7 @@
     "id": "2016_tote",
     "price": "10.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Tote",
     "dimensions": {
       "weight": 227
     },
@@ -184,6 +303,7 @@
     "id": "2017_poster_carmen_clemente",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Carmen Clemente",
     "dimensions": {
       "weight": 86
     },
@@ -193,6 +313,7 @@
     "id": "2017_poster_brittany_gress",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Brittany Gress",
     "dimensions": {
       "weight": 86
     },
@@ -202,6 +323,7 @@
     "id": "2017_poster_eric_thomas",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Eric Thomas",
     "dimensions": {
       "weight": 86
     },
@@ -211,15 +333,31 @@
     "id": "2017_socks",
     "price": "15.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Socks",
     "inventoryManagementMethod": "Variant",
     "variants": [
       {
-        "name": "size",
-        "option": "Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Large"
+          }
+        ]
+      }
+    ],
+    "customFields": [
+      {
+        "name": "Size",
+        "options": "Small|Large",
+        "type": "dropdown"
       }
     ],
     "dimensions": {
@@ -230,55 +368,111 @@
     "id": "2017_tee",
     "price": "18.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Tee",
     "inventoryManagementMethod": "Variant",
     "variants": [
       {
-        "name": "size",
-        "option": "Men's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's XXL"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's XXL"
+          }
+        ]
+      }
+    ],
+    "customFields": [
+      {
+        "name": "Size",
+        "options": "Men's Extra Small|Men's Small|Men's Medium|Men's Large|Men's Extra Large|Men's XXL|Women's Extra Small|Women's Small|Women's Medium|Women's Large|Women's Extra Large|Women's XXL",
+        "type": "dropdown"
       }
     ],
     "dimensions": {
@@ -289,6 +483,7 @@
     "id": "2018_blue_tote",
     "price": "10.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Blue Tote",
     "dimensions": {
       "weight": 227
     },
@@ -298,6 +493,7 @@
     "id": "2018_coloring_book",
     "price": "10.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Coloring Book",
     "dimensions": {
       "weight": 114
     },
@@ -307,6 +503,7 @@
     "id": "2018_red_tote",
     "price": "10.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Red Tote",
     "dimensions": {
       "weight": 227
     },
@@ -316,55 +513,111 @@
     "id": "2018_tee",
     "price": "18.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Tee",
     "inventoryManagementMethod": "Variant",
     "variants": [
       {
-        "name": "size",
-        "option": "Men's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Men's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Men's XXL"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Women's XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Women's XXL"
+          }
+        ]
+      }
+    ],
+    "customFields": [
+      {
+        "name": "Size",
+        "options": "Men's Extra Small|Men's Small|Men's Medium|Men's Large|Men's Extra Large|Men's XXL|Women's Extra Small|Women's Small|Women's Medium|Women's Large|Women's Extra Large|Women's XXL",
+        "type": "dropdown"
       }
     ],
     "dimensions": {
@@ -375,6 +628,7 @@
     "id": "2018_yellow_tote",
     "price": "10.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Yellow Tote",
     "dimensions": {
       "weight": 227
     },
@@ -384,6 +638,7 @@
     "id": "2020_poster_erik_rodriguez",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Erik Rodriguez",
     "dimensions": {
       "weight": 86
     },
@@ -393,6 +648,7 @@
     "id": "2020_poster_chris_crouch",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Chris Crouch",
     "dimensions": {
       "weight": 86
     },
@@ -402,6 +658,7 @@
     "id": "2020_poster_natalie_marie",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Natalie Marie",
     "dimensions": {
       "weight": 86
     },
@@ -411,6 +668,7 @@
     "id": "2020_poster_carly_berry",
     "price": "0.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Carly Berry",
     "dimensions": {
       "weight": 86
     },
@@ -420,6 +678,7 @@
     "id": "2020_sticker_cup",
     "price": "2.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Cup Sticker",
     "dimensions": {
       "weight": 29
     },
@@ -429,6 +688,7 @@
     "id": "2020_sticker_mouth",
     "price": "2.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Mouth Sticker",
     "dimensions": {
       "weight": 29
     },
@@ -438,6 +698,7 @@
     "id": "2020_sticker_owl",
     "price": "2.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Owl Sticker",
     "dimensions": {
       "weight": 29
     },
@@ -447,6 +708,7 @@
     "id": "2020_sticker_pack",
     "price": "6.50",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Sticker Pack",
     "dimensions": {
       "weight": 29
     },
@@ -456,6 +718,7 @@
     "id": "2020_sticker_pencil",
     "price": "2.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Pencil Sticker",
     "dimensions": {
       "weight": 29
     },
@@ -465,31 +728,63 @@
     "id": "2020_tee",
     "price": "20.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Tee",
     "inventoryManagementMethod": "Variant",
     "variants": [
       {
-        "name": "size",
-        "option": "Extra Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Extra Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Small"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Small"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Medium"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Medium"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "Extra Large"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "Extra Large"
+          }
+        ]
       },
       {
-        "name": "size",
-        "option": "XXL"
+        "variation": [
+          {
+            "name": "Size",
+            "option": "XXL"
+          }
+        ]
+      }
+    ],
+    "customFields": [
+      {
+        "name": "Size",
+        "options": "Extra Small|Small|Medium|Large|Extra Large|XXL",
+        "type": "dropdown"
       }
     ],
     "dimensions": {
@@ -500,6 +795,7 @@
     "id": "2020_tote",
     "price": "10.00",
     "url": "http://designweektallahassee.ngrok.io/products.json",
+    "name": "Tote",
     "dimensions": {
       "weight": 227
     },

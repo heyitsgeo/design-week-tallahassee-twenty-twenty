@@ -4,6 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+exports.onCreatePage = async({ page, actions: { deletePage }}) => {
+  if (!!page.path.match(/^\/shop/) && process.env.GATSBY_SHOP_TURNED_ON === 'false') {
+    console.log('Shop feature is disabled, removing from build.')
+    deletePage(page);
+  }
+}
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 

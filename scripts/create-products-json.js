@@ -36,6 +36,7 @@ const getProductDetails = (filePath) => {
       itemId,
       itemPrice,
       itemSizes,
+      itemName,
       stock,
       dimensions
     } = attributes;
@@ -43,7 +44,8 @@ const getProductDetails = (filePath) => {
     const productDef = {
       id: itemId,
       price: itemPrice,
-      url: SNIPCART_PRODUCT_JSON_URL
+      url: SNIPCART_PRODUCT_JSON_URL,
+      name: itemName
     }
 
     if (itemSizes && itemSizes.length > 0) {
@@ -54,10 +56,20 @@ const getProductDetails = (filePath) => {
       productDef.inventoryManagementMethod = 'Variant';
       productDef.variants = sizeOptions.map(size => {
         return {
-          name: 'size',
-          option: size,
+          variation: [
+            {
+              name: 'Size',
+              option: size,
+            }]
         };
       });
+      productDef.customFields = [
+        {
+          name: "Size",
+          options: sizeOptions.join('|'),
+          type: 'dropdown'
+        }
+      ]
     }
 
     if (dimensions && dimensions.length > 0) {

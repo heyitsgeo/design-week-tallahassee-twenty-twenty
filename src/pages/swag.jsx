@@ -34,7 +34,7 @@ const Swag = ({ data }) => {
 
   return (
     <DefaultLayout>
-      <SEO title="Episodes" description={"Design Week Tallahassee"}/>
+      <SEO title="Swag" description={"Design Week Tallahassee"}/>
       <Section color="cream">
         <div className={swagStyles.container}>
           <PageHeader>

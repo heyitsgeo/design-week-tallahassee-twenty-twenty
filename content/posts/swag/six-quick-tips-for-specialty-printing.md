@@ -1,6 +1,6 @@
 ---
 name: 6 Quick Tips for Specialty Printing
-featuredImage: ../../images/swag/six-quick-tips-for-designing-for-specialty-printing.png
+featuredImage: ../../images/swag/swag_6_tips.png
 downloadPath: '/swag/6 Quick Tips for Specialty Printing - by Fresh Impression.pdf'
 postType: swag
 ---

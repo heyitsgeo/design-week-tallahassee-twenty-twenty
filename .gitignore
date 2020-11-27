@@ -70,3 +70,6 @@ yarn-error.log
 
 # products varification file build via script
 /static/products.json
+
+# Local Netlify folder
+.netlify
